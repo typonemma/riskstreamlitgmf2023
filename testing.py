@@ -7,11 +7,11 @@ import seaborn as sns
 def intro():
     
 
-    st.write("# Welcome to Risk Map Monitoring👋")
+    st.write("# Welcome to Risk Map Monitoring")
     st.sidebar.success("Pilih unitnya dulu yuk")
 
     st.markdown(
-        "Selamat Datang! Silahkan Pilih Unit Dipojok Kiri 👈"
+        "Selamat Datang! Silahkan Pilih Unit Dipojok Kiri "
         
     )
 
@@ -1067,7 +1067,7 @@ def tz():
     
 
 page_names_to_funcs = {
-    "—": intro,
+    "Belum ada Unit": intro,
     "TA": ta,
     "TB": tb,
     "TC" : tc,
