@@ -9,7 +9,6 @@ def intro():
 
     st.write("# Welcome to Risk Map Monitoring")
     st.sidebar.success("Pilih unitnya dulu yuk")
-
     st.markdown(
         "Selamat Datang! Silahkan Pilih Unit Dipojok Kiri "
         
@@ -67,11 +66,11 @@ def ta():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -79,15 +78,15 @@ def ta():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TA Risk Map')
@@ -151,11 +150,11 @@ def tb():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -163,15 +162,15 @@ def tb():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TB Risk Map')
@@ -229,11 +228,11 @@ def tc():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -241,15 +240,15 @@ def tc():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TD Risk Map')
@@ -310,11 +309,11 @@ def td():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -322,15 +321,15 @@ def td():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TB Risk Map')
@@ -391,11 +390,11 @@ def td():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -403,15 +402,15 @@ def td():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TB Risk Map')
@@ -472,11 +471,11 @@ def ti():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -484,15 +483,15 @@ def ti():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TI Risk Map')
@@ -553,11 +552,11 @@ def tj():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -565,15 +564,15 @@ def tj():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TJ Risk Map')
@@ -634,11 +633,11 @@ def tm():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -646,15 +645,15 @@ def tm():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TM Risk Map')
@@ -715,11 +714,11 @@ def tr():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -727,15 +726,15 @@ def tr():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TR Risk Map')
@@ -796,11 +795,11 @@ def tu():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -808,15 +807,15 @@ def tu():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TU Risk Map')
@@ -877,11 +876,11 @@ def tv():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -889,15 +888,15 @@ def tv():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TV Risk Map')
@@ -958,11 +957,11 @@ def tx():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -970,15 +969,15 @@ def tx():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TX Risk Map')
@@ -1039,11 +1038,11 @@ def tz():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Note='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Note='')])
-    con2 = pd.concat([df_new3.assign(Note='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Note='')])
-    con3 = pd.concat([df_new5.assign(Note='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Note='')])
-    con4 = pd.concat([df_new7.assign(Note='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Note='')])
-    con5 = pd.concat([df_new9.assign(Note='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Note='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya akurat dalam mengelola proyek'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Adanya pekerjaan yang tidak ter-record dengan baik'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Kesalahan dalam menentukan material yang dibutuhkan'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Remove install component tidak sesuai antara sistem dan actual'), df_new10.assign(Risk='')])
 
     ##design
     img = plt.imread('backgroundrisk.png')
@@ -1051,15 +1050,15 @@ def tz():
     ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
 
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C0", "C0"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C6", "C6"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C5", "C5"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Note', hue='Note', ax=ax, s=160, palette=["C4", "C4"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TZ Risk Map')
