@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pylab as plt
 import seaborn as sns
-import openpyxl
+
 
 def intro():
     
@@ -98,8 +98,6 @@ def ta():
    
 def tb():
     
-
-
     st.title("Risk Management Matrix Unit TB")
     df = pd.read_excel('data.xlsx')
     df2 = pd.read_excel('data.xlsx')
