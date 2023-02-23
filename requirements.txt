@@ -4,4 +4,4 @@ pandas
 streamlit
 matplotlib
 seaborn
-openpyxl
+openpyxl == 3.1.0
