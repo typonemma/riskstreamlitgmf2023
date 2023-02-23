@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 import matplotlib.pylab as plt
 import seaborn as sns
-
+import openpyxl
+from openpyxl import load_workbook
 
 def intro():
     
@@ -18,7 +19,9 @@ def intro():
 
 def ta():
     st.title("Risk Management Matrix Unit TA")
-    df = pd.read_excel('data.xlsx')
+    wb = load_workbook(filename='data.xlsx', read_only=True)
+    ##df = pd.read_excel('data.xlsx')
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='Risk Register')
 
     #data 1
     df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
