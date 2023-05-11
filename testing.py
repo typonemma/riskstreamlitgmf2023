@@ -21,7 +21,7 @@ def ta():
     st.title("Risk Management Matrix Unit TA")
     wb = load_workbook(filename='data.xlsx', read_only=True)
     ##df = pd.read_excel('data.xlsx')
-    df = pd.read_excel(open('RR2023.xlsx', 'rb'), sheet_name='Risk Register')
+    df = pd.read_excel(open('RR2023.xlsx', 'rb'), sheet_name='RR2023')
 
     #data 1
     df_new = df.loc[ (df['Risiko'] == 'Adanya aktivitas tambahan yang berasal dari manajemen request yang belum dibudgetkan di awal tahun serta Adanya realokasi budget anggaran yang tidak sesuai') & (df['Unit'] == 'TA')]
