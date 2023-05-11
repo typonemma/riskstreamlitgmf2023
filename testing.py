@@ -21,11 +21,11 @@ def ta():
     st.title("Risk Management Matrix Unit TA")
     wb = load_workbook(filename='data.xlsx', read_only=True)
     ##df = pd.read_excel('data.xlsx')
-    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='Risk Register')
+    df = pd.read_excel(open('RR2023.xlsx', 'rb'), sheet_name='Risk Register')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Adanya aktivitas tambahan yang berasal dari manajemen request yang belum dibudgetkan di awal tahun serta Adanya realokasi budget anggaran yang tidak sesuai') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Adanya aktivitas tambahan yang berasal dari manajemen request yang belum dibudgetkan di awal tahun serta Adanya realokasi budget anggaran yang tidak sesuai') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -33,8 +33,8 @@ def ta():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Risiko pembuatan invoice untuk project dan retail tidak sesuai dengan lead time') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Risiko pembuatan invoice untuk project dan retail tidak sesuai dengan lead time') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -42,8 +42,8 @@ def ta():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Keterlambatan pencatatan AP AR') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Keterlambatan pencatatan AP AR') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -51,8 +51,8 @@ def ta():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Penurunan Revenue karena perusahaan menanggung biaya selisih perubahan tarif PPN Serta Dilakukan audit pajak setiap tahun') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Penurunan Revenue karena perusahaan menanggung biaya selisih perubahan tarif PPN Serta Dilakukan audit pajak setiap tahun') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -60,8 +60,8 @@ def ta():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Terdapat PPh Badan yang harus dibayar walaupun sesuai Laporan Keuangan GMF mengalami kerugian Serta Kenaikan staff expense akibat dari naiknya employee tax expense') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Terdapat PPh Badan yang harus dibayar walaupun sesuai Laporan Keuangan GMF mengalami kerugian Serta Kenaikan staff expense akibat dari naiknya employee tax expense') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -106,8 +106,8 @@ def tb():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -115,8 +115,8 @@ def tb():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -124,8 +124,8 @@ def tb():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -133,8 +133,8 @@ def tb():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -142,8 +142,8 @@ def tb():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -184,8 +184,8 @@ def tc():
     
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -193,8 +193,8 @@ def tc():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -202,8 +202,8 @@ def tc():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -211,8 +211,8 @@ def tc():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -220,8 +220,8 @@ def tc():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -265,8 +265,8 @@ def td():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -274,8 +274,8 @@ def td():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -283,8 +283,8 @@ def td():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -292,8 +292,8 @@ def td():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -301,8 +301,8 @@ def td():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -346,8 +346,8 @@ def td():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -355,8 +355,8 @@ def td():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -364,8 +364,8 @@ def td():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -373,8 +373,8 @@ def td():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -382,8 +382,8 @@ def td():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -427,8 +427,8 @@ def ti():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -436,8 +436,8 @@ def ti():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -445,8 +445,8 @@ def ti():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -454,8 +454,8 @@ def ti():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -463,8 +463,8 @@ def ti():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -508,8 +508,8 @@ def tj():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -517,8 +517,8 @@ def tj():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -526,8 +526,8 @@ def tj():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -535,8 +535,8 @@ def tj():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -544,8 +544,8 @@ def tj():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -589,8 +589,8 @@ def tm():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -598,8 +598,8 @@ def tm():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -607,8 +607,8 @@ def tm():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -616,8 +616,8 @@ def tm():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -625,8 +625,8 @@ def tm():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -670,8 +670,8 @@ def tr():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -679,8 +679,8 @@ def tr():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -688,8 +688,8 @@ def tr():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -697,8 +697,8 @@ def tr():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -706,8 +706,8 @@ def tr():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -751,8 +751,8 @@ def tu():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -760,8 +760,8 @@ def tu():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -769,8 +769,8 @@ def tu():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -778,8 +778,8 @@ def tu():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -787,8 +787,8 @@ def tu():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -832,8 +832,8 @@ def tv():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -841,8 +841,8 @@ def tv():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -850,8 +850,8 @@ def tv():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -859,8 +859,8 @@ def tv():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -868,8 +868,8 @@ def tv():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -913,8 +913,8 @@ def tx():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -922,8 +922,8 @@ def tx():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -931,8 +931,8 @@ def tx():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -940,8 +940,8 @@ def tx():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -949,8 +949,8 @@ def tx():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -994,8 +994,8 @@ def tz():
     df2 = pd.read_excel('data.xlsx')
 
     #data 1
-    df_new = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
-    df_new2 = df.loc[ (df['Title'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurang akurat dalam mengelola proyek') & (df['Unit'] == 'TB')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -1003,8 +1003,8 @@ def tz():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
-    df_new4 = df.loc[ (df['Title'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Adanya pekerjaan yang tidak ter-record dengan baik') & (df['Unit'] == 'TB')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -1012,8 +1012,8 @@ def tz():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
-    df_new6 = df.loc[ (df['Title'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Implementasi dan aplikasi manhours dan material plan yang belum berjalan dengan baik') & (df['Unit'] == 'TB')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -1021,8 +1021,8 @@ def tz():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
-    df_new8 = df.loc[ (df['Title'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Kesalahan dalam menentukan material yang dibutuhkan') & (df['Unit'] == 'TB')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -1030,8 +1030,8 @@ def tz():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
 
     #data5
-    df_new9 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
-    df_new10 = df.loc[ (df['Title'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Remove install component tidak sesuai antara sistem dan actual') & (df['Unit'] == 'TB')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5

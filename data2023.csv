@@ -1,0 +1,299 @@
+Nama Dinas,Risk ID,KPI,Target,Pencapaian KPI YTD,Pencapaian KPI Jan,Pencapaian KPI Feb,Pencapaian KPI Mar,Pencapaian KPI Apr,Pencapaian KPI Mei,Pencapaian KPI Jun,Pencapaian KPI Jul,Pencapaian KPI Aug,Pencapaian KPI Sep,Pencapaian KPI Oct,Pencapaian KPI Nov,Pencapaian KPI Dec,Risiko,Rencana Pengendalian,PIC/ UIC,Ukuran Keberhasilan,Target Waktu Penyelesaian,Assigned to,Progress,Jan % Pencapaian Indikator Keberhasilan,Jan Justifikasi Status Penyelesaian,Jan Catatan Risk Analyst,Feb % Pencapaian Indikator Keberhasilan,Feb Justifikasi Status Penyelesaian,Feb Catatan Risk Analyst,Mar % Justifikasi Status Penyelesaian,Mar Justifikasi Status Penyelesaian,Mar Catatan Risk Analyst,Apr % Pencapaian Indikator Keberhasilan,Apr Justifikasi Status Penyelesaian,May % Pencapaian Status,May Justifikasi Status Penyelesaian,May Catatan Risk ANalyst,Jun % Pencapaian Indikator Keberhasilan,Jun Justifikasi Status Penyelesaian,Jun Catatan Risk Analyst,Jul % Pencapaian Indikator Keberhasilan,Jul Justifikasi Status Penyelesaian,Jul Catatan Risk Analyst,Aug % Pencapaian Indikator Keberhasilan,Aug Justifikasi Status Penyelesaian,Aug Catatan Risk Analyst,Sep % Pencapaian Indikator Keberhasilan,Sep Justifikasi Status Penyelesaian,Sep Catatan Risk Analyst,Oct % Pencapaian Indikator Keberhasilan,Oct Justifikasi Status Penyelesaian,Oct Catatan Risk Analyst,Nov % Pencapaian Indikator Keberhasilan,Nov Justifikasi Status Penyelesaian,Nov Catatan Risk Analyst,Dec % Pencapaian Indikator Keberhasilan,Dec Justifikasi Status Penyelesaian,Dec Catatan Risk Analyst,Submission Month
+"TA","27","On Time Invoicing Process","100","100",,,,,,,,,,,,,"Risiko pembuatan invoice untuk project dan retail tidak sesuai dengan lead time","Creating Invoice for Project & Retail in certain lead time","Chairuddin","Invoice available in time for package & NPPA post production invoice","Dec 2023","Muhammad Ifroh Thobibul Qulub","In progress","100%","Pada Januari invoice tersedia sesuai dengan TAT yang disepakati",,"100%","Pada Februari invoice tersedia sesuai dengan TAT yang disepakati",,"100%","Pada Maret invoice tersedia sesuai dengan TAT yang disepakati",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TD","9","F1.1 Budget Realization","<Pencapaian revenue GMF bulan sebelumnya","76.27%","69.41%","76.27%",,,,,,,,,,,"Realisasi budget dinas TD mengalami over budget","Melakukan koordinasi dengan unit Accounting & Financial Analysis untuk merapikan pencatatan biaya","Fidiarta Andika","- Monitoring Realisasi anggaran  terlaksana setiap bulannya
+- Realisasi anggaran < budget","Monthly","Faza Yoshio Susanto","In progress","100%","- Koordinasi dengan unit TAB untuk verifikasi realisasi anggaran terlaksana
+- Realisasi anggaran < target",,"100%","- Koordinasi dengan unit TAB untuk verifikasi realisasi anggaran terlaksana
+- Realisasi anggaran < target",,"100%","- Koordinasi dengan unit TAB untuk verifikasi realisasi anggaran terlaksana",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TD","10","C1.1 Customer Satisfaction Index","4.00","TBD","Pengukuran KPI Quarterly","Pengukuran KPI Quarterly","TBD",,,,,,,,,,"Customer tidak puas atas layanan IT GMF","Memastikan pembayaran layanan IT sesuai dengan tagihan dan tepat waktu","Fidiarta Andika","- Layanan IT berjalan dengan normal
+- Tagihan vendor IT dibayarkan sesuai timeframe yang disepakati
+- Tidak ada komplain dari customer untuk layanan IT","Monthly","Faza Yoshio Susanto","In progress","100%","- Layanan IT berjalan dengan normal
+- Tagihan vendor IT dibayarkan sesuai timeframe yang disepakati
+- Tidak ada komplain dari customer untuk layanan IT",,"100%","- Layanan IT berjalan dengan normal
+- Tagihan vendor IT dibayarkan sesuai timeframe yang disepakati
+- Tidak ada komplain dari customer untuk layanan IT",,"100%","- Layanan IT berjalan dengan normal
+- Tagihan vendor IT dibayarkan sesuai timeframe yang disepakati",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TD","12","I2.1 MRO Strategic Collaboration","1","TBD","Pengukuran KPI Annually","Pengukuran KPI Annually","Pengukuran KPI Annually",,,,,,,,,,"Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic","Penyiapan alternatif untuk setiap rencana pengembangan inorganic","Fidiarta Andika","- Pengembangan bisnis terlaksana (MoU)
+- Target revenue dan net profit perusahaan tercapai sesuai dengan RKAP","Desember 2023","Faza Yoshio Susanto","In progress","0%","- GMF masih melakukan kajian terkait kerjasama yang dapat dilakukan.
+- Pengembangan bisnis belum terlaksana
+- Target revenue dan net profit belum mencapai target RKAP",,"0%","- GMF masih melakukan kajian terkait kerjasama yang dapat dilakukan.
+- Pengembangan bisnis belum terlaksana
+- Target revenue dan net profit belum mencapai target RKAP",,"0%","- GMF masih melakukan kajian terkait kerjasama yang dapat dilakukan.
+- Pengembangan bisnis belum terlaksana
+- Target revenue dan net profit belum mencapai target RKAP",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TD","15","I1.2 Asset Management","100%","100%","100%","100%","100%",,,,,,,,,,"Asset investasi dinas TD tidak terutilisasi dengan maksimal","Monitoring utilisasi aset investasi","Fidiarta Andika","- Laporan monitoring utilisasi aset tersedia
+- Aset dinas TD terutilisasi dengan baik","Monthly","Faza Yoshio Susanto","In progress","100%","- Laporan monitoring utilisasi aset tersedia
+- Aset dinas TD terutilisasi dengan baik",,"100%","- Laporan monitoring utilisasi aset tersedia
+- Aset dinas TD terutilisasi dengan baik",,"100%","- Laporan monitoring utilisasi aset tersedia
+- Aset dinas TD terutilisasi dengan baik",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TZ","93","COPQ",,,"100","100","100",,,,,,,,,,"Terjadinya COPQ project","1. identification & mitigation COPQ implemention
+2. Development HSE personeel di TZ","Cornelis Radjawane","surveillance rutin di laporkan dan report tersedia","Q2","Fachmi Yuni Arista","In progress","30%","Surveillance sudah rutin di lakukan namun skema report masih disiapkan ","Beberapa temuan dan sudah di follow up","50%","Surveillance sudah rutin di lakukan namun skema report masih disiapkan ","Beberapa temuan dan sudah di follow up","90%","Surveillance sudah rutin di lakukan namun skema report masih disiapkan ","Beberapa temuan dan sudah di follow up",,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TZ","94","Customer SLA Fulfillment",,,"100","96",,,,,,,,,,,"SLA customer yang tidak tercapi ","1. melakukan monitoring rutine terhadap Cash Flow
+2. melakukan monitoring rutine terhadap performance payment plan","Cornelis Radjawane","report monitoring tersedia","Q2","Fachmi Yuni Arista","In progress","50%","Report belum tersedia karena masih persiapan report yang dibutuhkan","Dalam penyusunan template report Performance cash flow","100%","Report available","ada beberapa payment plan yang tidak sesuai dengan target ","100%","Report available","ada beberapa payment plan yang tidak sesuai dengan target ",,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TZ","106","Continuous Improvement ",,,"100","100","100",,,,,,,,,,"terdapat item continues improvement yang tidak terlaksana","pembuatan additional continues improvement diluar dari yang sudah di rencanakan","Cornelis Radjawane","terdapat 4 continues improvement di tahun 2023","Q3","Fachmi Yuni Arista","In progress","100%","dari 4 CI yang terdaftar masih on progress","N/A","100%","dari 4 CI yang terdaftar masih on progress","N/A","100%","dari 4 CI yang terdaftar masih on progress","N/A",,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TI","2","C1.1  Internal Customer Satisfaction Index","3.75","N/A",,,,,,,,,,,,,"Kurangnya value added yang dirasakan oleh auditee terhadap rekomendasi internal audit ","1. Meningkatkan frekuensi penugasan konsultasi dan review (untuk auditor dan unit)
+2. Meningkatkan koordinasi dengan surveilance rutine dan PIC kontrol tindak lanjut pareto hasil survey
+3. Meningkatkan pemahaman teknik audit yang sesuai dan systematis
+4. Melakukan control rekomondasi auditee terhadap program audit 
+5. Menambah knowledge bisnis management pada auditor dengan training ","Deddy Fezantino","1. IPP pelaksanaan audit
+2. Surveilance terlaksana
+3.  Requirement auditee sudah masuk dalam audit requirement
+4. Penilaian CSI auditee terlaksana baik verbal atau tulisan 
+5. Strategi rekomondasi  diimplementasikan di Dinas
+6. Training terlaksana untuk menambah knowledge auditor dalam bisnis management","Semesterly","Carolina Rearini/531960","In progress","100%","1. Frekuensi konsultasi auditor dan unit (auditee) dimasukan dalam IPP done 
+2. Surveilence program audit done di lakukan
+3. PB 2022 mengenai pemahaman teknik audit done di sosialisikan dan sesuai dengan requirement audit yang dilakukan
+4. Control rekomondasi auditee program audit terlaksana monthly
+5. Training control LCU untuk menambah knowledge bisnis auditor 
+6. Matrix penilaian audit terhadap CSI under progres matrix dilakukan PDCA CSI dan di report per semester ",,"100%","1. Frekuensi konsultasi auditor dan unit (auditee) dimasukan dalam IPP done 
+2. Surveilence program audit done di lakukan
+3. PB 2022 mengenai pemahaman teknik audit done di sosialisikan dan sesuai dengan requirement audit yang dilakukan
+4. Control rekomondasi auditee program audit terlaksana monthly
+5. Training control LCU untuk menambah knowledge bisnis auditor 
+6. Matrix penilaian audit terhadap CSI under progres matrix dilakukan PDCA CSI dan di report per semester ",,"100%","1. Frekuensi konsultasi auditor dan unit (auditee) dimasukan dalam IPP done 
+2. Surveilence program audit done di lakukan
+3. PB 2022 mengenai pemahaman teknik audit done di sosialisikan dan sesuai dengan requirement audit yang dilakukan
+4. Control rekomondasi auditee program audit terlaksana monthly
+5. Training control LCU untuk menambah knowledge bisnis auditor 
+6. Matrix penilaian audit terhadap CSI under progres matrix dilakukan PDCA CSI dan di report per semester ",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TI","3","I1.1   Closure of Audit Action Items","75%","100%",,,,,,,,,,,,,"auditee tidak memprioritaskan penyelesaian tindak lanjut audit","1. Monitoring audit yang diluar dari time frame dengan menerbitkan BA-menerima resiko untuk MTL tidak closed > 1 tahun dan tidak bisa di selesaikan
+2. Invited audite untuk koordinasi matrik tindak lanjut yang belum closed","Deddy Fezantino","1.BA-menerima resiko matrik tindak lanjut yang disutujui team audit dan komite audit
+2. 'Penyelesaian tidak lanjut audit terlaksana sesuai target
+","Quarterly","Carolina Rearini/531960","In progress","0%","1.BA-menerima resiko matrik tindak lanjut  telah dikirim ke auditee yang telah disetujui komite audit 
+2. 'Penyelesaian MTL Progress (0%)",,"40%","1.BA-menerima resiko matrik tindak lanjut  telah dikirim ke auditee yang telah disetujui komite audit 
+2. 'Penyelesaian MTL Progress (40%)",,"100%","1.BA-menerima resiko matrik tindak lanjut  telah dikirim ke auditee untuk MTL yang diluar taget time frame closed audit
+2. 'Penyelesaian MTL Progress (100%)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TI","8","I15 Continuous Improvement","100%","N/A",,,,,,,,,,,,,"1. Terbatasnya budget pengembangan tools audit 2. Keterbatasan kemampuan dalam pengembangan tools audit 3. Tidak adanya spare waktu untuk melakukan pengembangan tools audit 4. Perbaikan proses tidak efisien dan efektif","1.Pengesahan prosedur bisnis TI  dan allign dengan SDA tools monitoring
+2.SDA tools monitoring audit terimplementasi","Deddy Fezantino","1. Prosedur Bisnis TI disetujui dan di implementasikan
+2. SDA tools audit  berjalan aktif (Target semester done efektif)
+3. Early warning system tools berjalan efektif (Target semester done efektif)","Semesterly","Carolina Rearini/531960","In progress","80%","1. Prosedur Bisnis TI disetujui dan di implementasikan(Nov 2022); done
+2. SDA tools audit  berjalan aktif : done tetapi belum berjalan(Target semester done efektif)
+3. Early warning system tools berjalan efektif : belum berjalan on progress(Target semester done efektif)",,"80%","1. Prosedur Bisnis TI disetujui dan di implementasikan(Nov 2022); done
+2. SDA tools audit  berjalan aktif : done tetapi belum berjalan
+3. Early warning system tools berjalan efektif : belum berjalan on progress",,"80%","1. Prosedur Bisnis TI disetujui dan di implementasikan(Nov 2022); done
+2. SDA tools audit  berjalan aktif : SDA done tetapi belum berjalan aktif
+3. Early warning system tools berjalan efektif : belum berjalan on progress",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TI","125","F1.1  Budget Realization","100%","90%",,,,,,,,,,,,," Belum dialokasikan keseluruhan pelaksanaan sertifikasi QIA- budget personil baru ","1. Monitoring berkala realisasi budget dan koordinasi dengan Fungsi pengelola Anggaran
+2. Realokasi budget dengan tetap mempertahankan Realisasi Audit Plan 2023
+","Deddy Fezantino","1. Report of analysis budget realization terlaksan 
+2.  Realokasi budget sesuai kebutuhan","Monthly","Carolina Rearini/531960","Not started","100%","1. Report of analysis budget realization terlaksana(monthly)
+2. Realokasi budget sesuai kebutuhan(tidak ada realokasi)",,"90%","1. Report of analysis budget realization terlaksana(monthly)
+2. Realokasi budget sesuai kebutuhan(tidak ada realokasi)",,"90%","1. Report of analysis budget realization terlaksana(monthly)
+2. Realokasi budget sesuai kebutuhan(tidak ada realokasi)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TE","45","Customer Satisfaction Index","100","100","100","100","100",,,,,,,,,,"Pelanggan tidak puas dengan kinerja engineer dalam mendeliver pekerjaan","Melanjutkan pengendalian yang sudah ada","Zuriati","1. PRM dikontrol dan dilaporkan ke Customer
+2. Pertemuan Triwulanan dengan Customer rutin dilakukan
+3. Peningkatan proses bisnis, produk, atau layanan berhasil dilakukan dan mencapai target","Semester","Dianika Fachrur Harrys Sarwono","In progress","100%","Customer puas terhadap kinerja dan pelayanan engineer",,"100%","Customer puas terhadap kinerja dan pelayanan engineer",,"100%","Customer puas terhadap kinerja dan pelayanan engineer",,,,,,,,,,,,,,,,,,,,,,,,,,,,"Desember"
+"TE","44","Customer SLA Fulfillment","100","75.94","76.251","75.940",,,,,,,,,,,"SLA tidak terpenuhi terkait produk pelayanan dan jasa dengan customer","1. Pantau langkah-langkah yang diambil di portal SRI secara berkesinambungan
+2. Berkolaborasi dengan unit perencanaan, AOG, MCC / MOD, FMC / TOC untuk menyelesaikan masalah operasional
+3. Saling mengingatkan tentang awareness saat melakukan perawatan
+4. FTM lebih aktif bertanya bila ada kendala operasional dan menindaklanjuti dengan respon cepat untuk diselesaikan problem tersebut
+5. Melanjutkan pengendalian efektif yang sudah ada
+6. Membangun komunikasi yang lebih interaktif dan komunikatif dengan pelanggan dan lessor
+7. Efisiensi waktu dengan membuat laporan yang terintegrasi dengan kondisi aktual yang dapat diakses kapan saja dan di mana saja","Zuriati","1. Reliability Control dan TIA  telah dilaksanakan untuk fleet GA dan QG
+2. Tindak lanjut terkait TDAM Issue
+3. RCP berjalan dengan baik sehingga rekomendasi dapat diberikan
+4. Seluruh Manufacturer Bulletin/Publication (FTD/TFU) telah dievaluasi dan dilaporkan dalam laporan PRM bulanan
+5. Penilaian dan rekomendasi terkait Engine & APU  Healthy selalu tersedia
+6. Program terkait masalah Dispatch Reliability (DR) tersedia dan dapat diimplementasikan
+7. Implementasi TIA dapat terkontrol 
+8. Timeframe terkait jangka waktu suatu proyek tersedia dan jelas TATnya
+9. Milestone terkait suatu proyek dapat dikontrol","Bulanan","Dianika Fachrur Harrys Sarwono","In progress","80%","Pelayanan terkait produk dan jasa engineer kepada customer yang telah disepakati dapat terealisasikan dan customer puas dengan hasil evaluasi serta responsibility/action dari engineer",,"80%","Pelayanan terkait produk dan jasa engineer kepada customer yang telah disepakati dapat terealisasikan dan customer puas dengan hasil evaluasi serta responsibility/action dari engineer",,"80%","Pelayanan terkait produk dan jasa engineer kepada customer yang telah disepakati dapat terealisasikan dan customer puas dengan hasil evaluasi serta responsibility/action dari engineer",,,,,,,,,,,,,,,,,,,,,,,,,,,,"Desember"
+"TE","42","Data Quality Integrity","100","99","99","99","99",,,,,,,,,,"Konfigurasi pesawat antara sistem dan aktual tidak sesuai setelah proses maintenance pesawat (RTS)","1. Melanjutkan pengendalian yang sudah ada
+2. Menyempurnakan tools monitoring DQI terkait Structure Gap agar lebih tepat sasaran","Zuriati","Tidak ada structure gap untuk pesawat GA dan QG","Bulanan","Dianika Fachrur Harrys Sarwono","In progress","100%","1. Konfigurasi pesawat antara sistem dan aktual sudah sesuai untuk pesawat Garuda, sehingga tidak menimbulkan Sgap post maintenance.
+2. Konfigurasi pesawat antara sistem dan aktual banyak yang tidak sesuai untuk pesawat Citilink, sehingga menimbulkan Sgap post maintenance, hal ini dikarenakan:
+- PPC tidak mensimulasikan remove/install jika ada pergantian komponen
+- Rekan-rekan quality kurang memperhatikan dan tidak crosscheck kembali setelah maintenance
+- Customer kurang concern terhadap hal ini dan bahkan ketika kami mengajukan inventory check sebagai corrective action sering ditolak karena keterbatasan TAT.",,"99%","1. Konfigurasi pesawat antara sistem dan aktual sudah sesuai untuk pesawat Garuda, sehingga tidak menimbulkan Sgap post maintenance.
+2. Konfigurasi pesawat antara sistem dan aktual banyak yang tidak sesuai untuk pesawat Citilink, sehingga menimbulkan Sgap post maintenance, hal ini dikarenakan:
+- PPC tidak mensimulasikan remove/install jika ada pergantian komponen
+- Rekan-rekan quality kurang memperhatikan dan tidak crosscheck kembali setelah maintenance
+- Customer kurang concern terhadap hal ini dan bahkan ketika kami mengajukan inventory check sebagai corrective action sering ditolak karena keterbatasan TAT.",,"99%","1. Konfigurasi pesawat antara sistem dan aktual sudah sesuai untuk pesawat Garuda, sehingga tidak menimbulkan Sgap post maintenance.
+2. Konfigurasi pesawat antara sistem dan aktual banyak yang tidak sesuai untuk pesawat Citilink, sehingga menimbulkan Sgap post maintenance, hal ini dikarenakan:
+- PPC tidak mensimulasikan remove/install jika ada pergantian komponen
+- Rekan-rekan quality kurang memperhatikan dan tidak crosscheck kembali setelah maintenance
+- Customer kurang concern terhadap hal ini dan bahkan ketika kami mengajukan inventory check sebagai corrective action sering ditolak karena keterbatasan TAT.",,,,,,,,,,,,,,,,,,,,,,,,,,,,"Desember"
+"TE","43","Cost of Poor Quality ","100","100","100","100","100",,,,,,,,,,"Ketidakakuratan dokumen perintah kerja (Job Card) dalam menentukan kebutuhan material dan referensi kerja","1. Melanjutkan pengendalian yang sudah ada
+2. Mentoring program kepada development engineer baru","Zuriati","Quality Control Engineering Product dan Services telah dikerjakan","Bulanan","Dianika Fachrur Harrys Sarwono","In progress","100%","Dokumen kerja dan referensi yang digunakan sesuai serta quality control terkait engineering product dan services telah dilakukan",,"100%","Dokumen kerja dan referensi yang digunakan sesuai serta quality control terkait engineering product dan services telah dilakukan",,"100%","Dokumen kerja dan referensi yang digunakan sesuai serta quality control terkait engineering product dan services telah dilakukan",,,,,,,,,,,,,,,,,,,,,,,,,,,,"Desember"
+"TE","40","Human Capital Readiness","100","100","100","100","100",,,,,,,,,,"Target pencapaian KPI Dinas tidak tercapai","1. Internal dan external rekrutmen
+2. Dibentuk tim project untuk eskalasi kemampuan development engineer
+3. Training untuk menambah knowledge dan experience engineer ","Zuriati","1. Man-power quantity terpenuhi
+2. Man-power quality terpenuhi
+3. Mentoring program dapat berjalan sesuai target","Semester","Dianika Fachrur Harrys Sarwono","In progress","100%","Mitigasi yang telah diimplementasikan telah berhasil menanggulangi kekurangan kebutuhan man power. Selain itu rekrutmen akan terus dilakukan hingga akhir tahun dengan menyesuaikan budget yang ada.",,"100%","Mitigasi yang telah diimplementasikan telah berhasil menanggulangi kekurangan kebutuhan man power. Selain itu rekrutmen akan terus dilakukan hingga akhir tahun dengan menyesuaikan budget yang ada.",,"100%","Mitigasi yang telah diimplementasikan telah berhasil menanggulangi kekurangan kebutuhan man power. Selain itu rekrutmen akan terus dilakukan hingga akhir tahun dengan menyesuaikan budget yang ada.",,,,,,,,,,,,,,,,,,,,,,,,,,,,"Desember"
+"TA","31","Tax  and Custom Compliance","100","100",,,,,,,,,,,,,"Penurunan Revenue karena perusahaan menanggung biaya selisih perubahan tarif PPN Serta Dilakukan audit pajak setiap tahun","1. Amandemen kontrak
+2. Melakukan ekualisasi perpajakan","Chairuddin","1. Kontrak diperbarui dan GMF tidak menanggung selisih perubahan tarif
+2. Hasil audit pajak optimal","1 tahun setelah diajukannya restitusi pajak","Muhammad Ifroh Thobibul Qulub","In progress","100%","Evaluasi kontrak dilaksanakan dan audit pajak dilaksanakan dengan baik",,"100%","Evaluasi kontrak dilaksanakan dan audit pajak dilaksanakan dengan baik",,"100%","Evaluasi kontrak dilaksanakan dan audit pajak dilaksanakan dengan baik",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TA","32","Tax  anustom Compliance","100","100",,,,,,,,,,,,,"Terdapat PPh Badan yang harus dibayar walaupun sesuai Laporan Keuangan GMF mengalami kerugian Serta Kenaikan staff expense akibat dari naiknya employee tax expense","1. Mengupayakan ekuitas perusahaan menjadi positif kembali
+2. Melakukan evaluasi atas pemberian benefit kepada pegawai","Chairuddin","1. Ekuitas perusahaan positif
+2. Laju kenaikan employee staff expense dapat ditekan","Setelah diterbitkannya peraturan perpajakan tentang aturan","Muhammad Ifroh Thobibul Qulub","In progress","100%","Ekuitas perusahaan perlahan menunjukkan trend positif",,"100%","Ekuitas perusahaan perlahan menunjukkan trend positif",,"100%","Ekuitas perusahaan perlahan menunjukkan trend positif",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TA","34","Investment Planning & Control","100","100",,,,,,,,,,,,,"Data pendukung tidak akurat, lengkap dan terlambat diperoleh","Koordinasi dengan investment partner unit dan reminder, agar data dikirimkan dengan akurat, lengkap dan tepat waktu","Chairuddin","Sosialisasi aturan dan Koordinasi dengan PIC unit terlaksana","Monthly","Muhammad Ifroh Thobibul Qulub","In progress","100%","Control dan monitoring aset serta investasi telah dilaksanakan",,"100%","Control dan monitoring aset serta investasi telah dilaksanakan",,"100%","Control dan monitoring aset serta investasi telah dilaksanakan",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TF","KPI-TF-2023-215","Human Capital Readiness (HCR)",">=95%","92%","94%","92%","92%",,,,,,,,,,"Rencana kerja yang tidak tercapai","Continue existing control","Wayan Winten Adnyano,%23wayan.winten@gmf-aeroasia.co.id","Monthly Report, Meeting Taxonomy, Activity Plan","Monthly","Ressa Amelya","In progress","99%","Sudah melakukan taksonomi meeting secara berkala dan memantau status pelaksanaan rencana kegiatan.",,"97%","Sudah melakukan taksonomi meeting secara berkala dan memantau status pelaksanaan rencana kegiatan.","Monthly meeting sudah dilaksanakan berkala.","97%","Sudah melakukan taksonomi meeting secara berkala dan memantau status pelaksanaan rencana kegiatan. Pencapaian yang tertera masih menggunakan data bulan sebelumnya. Akan di update setelah diperoleh nilai aktual.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TF","KPI-TF-2023-208","Data Quality Integrity (DQI)","100%","80%","78%","80%","80%",,,,,,,,,,"Notifikasi dengan status SOD meningkat drastis","Controlling existing report","Wayan Winten Adnyano,%23wayan.winten@gmf-aeroasia.co.id","1. Status Postponed untuk Planning Item intensitasnya berkurang
+2. DQI LDND, Close Revision, Close Order, Remove Install dan Techlog report tersedia","Monthly","Ressa Amelya","In progress","78%","Monthly download untuk notifikasi dengan status open dan monthly report untuk LDND, close revision, close order, remove install dan techlog status sudah di laksanakan.",,"80%","Monthly download untuk notifikasi dengan status open dan monthly report untuk LDND, close revision, close order, remove install dan techlog status sudah di laksanakan. Pencapaian meningkat 2% dibandingkan bulan sebelumnya.",,"80%","Monthly download untuk notifikasi dengan status open dan monthly report untuk LDND, close revision, close order, remove install dan techlog status sudah di laksanakan. Pencapaian yang tertera masih menggunakan data bulan sebelumnya. Akan di update setelah diperoleh nilai aktual.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TF","KPI-TF-2023-207","Data Quality Integrity (DQI)","100%","80%","78%","80%","80%",,,,,,,,,,"Structure gap material consume muncul setelah maintenance selesai dilaksanakan","Controlling existing report","Wayan Winten Adnyano,%23wayan.winten@gmf-aeroasia.co.id","Tidak ada structure gap untuk semua GA Group Fleet","Monthly","Ressa Amelya","In progress","78%","Daily dan monthly report untuk data structure gap sudah dikontrol.",,"80%","Daily dan monthly report untuk data structure gap sudah dikontrol. Pencapaian meningkat 2% dibandingkan bulan sebelumnya.",,"80%","Daily dan monthly report untuk data structure gap sudah dikontrol. Pencapaian yang tertera masih menggunakan data bulan sebelumnya. Akan di update setelah diperoleh nilai aktual.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TF","KPI-TF-2023-200","Inventory",">=90%","75%","86%","69%","69%",,,,,,,,,,"Unserviceable material yang diturunkan dari pesawat keberadaannya tidak diketahui / hilang","1. Secara rutin melalukan follow-up WTU, WTC dan WFR material.
+2. TFC dan unit produksi TL melakukan pencatatan material robbing secara prosedural, dan segara melakukan re-install material robbing dari pesawat donor robbing","Wayan Winten Adnyano,%23wayan.winten@gmf-aeroasia.co.id","1. WTU-WTC-WTR terkontrol dan report tersedia.
+2. Tidak ada pergerakan component dan penumpukan material di ruang PPC","Monthly","Ressa Amelya","In progress","95%","PIC dari TFP-4 melakukan survailance dan pencatatan material US di area PPC dan line Hangar 2. Namun Material WFR masih tinggi sehingga pencapaian KPI hanya 95%.",,"77%","PIC dari TFP-4 melakukan survailance dan pencatatan material US di area PPC dan line Hangar 2. Namun Material WTU/WTC dan WFR masih tinggi sehingga pencapaian KPI hanya 77%.",,"77%","Sudah secara rutin melakukan follow-up material WTU, WTC dan WFR. WTU, WTC dan WFR Report sudah tersedia. Pencapaian yang tertera masih menggunakan data bulan sebelumnya. Akan di update setelah diperoleh nilai aktual.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TS","KPI-TS-2023-180","C1.2 Corporate Reputation Management",,,,,,,,,,,,,,,"Terjadinya penurunan layanan dalam Pengelolaan Komunikasi Perseroan;<br>","1. Melaksanakan pengukuran Employee Awareness & Feeback;
+2. 'Optimalisasi pemberian pemahaman kepada karyawan dan management terhadap pentingnya informasi Perseroan diserap dan dipahami dengan cepat serta memberikan kebanggan terhadap setiap kebiajakn dan branding Perseroan;
+3 Optimalisasi Media Outreach and Digital Trends;","Rian Fajar Isnaeni,%23rian.fajar@gmf-aeroasia.co.id","1. Hasil pengukuran tersedia dan sesuai target;
+2. Media Outreach and Digital Trends terlaksana optimal;","M","Ika Edriantika","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TS","KPI-TS-2023-181","I1.1 Governance, Risk, and Compliance",,,,,,,,,,,,,,,"1. Tindak lanjut hasil temuan audit tidak selesai tepat waktu dan tidak sesuai dengan rekomendasi audit;<br>2. Terlambatnya penyampaian laporan risk monitoring dan pengelolaan risikonya;","1. Menyusun plan dan time frame untuk menindaklanjuti rekomendasi hasil temuan audit;
+2. Risk Officer berkoordinasi dengan PDCA Business untuk penyampaian laporan Risk Monitoring;","Rian Fajar Isnaeni,%23rian.fajar@gmf-aeroasia.co.id","1. Rekomendasi dari temuan audit selesai;
+2. Laporan Risk Monitoring tersedia;","A","Ika Edriantika","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TS","KPI-TS-2023-183","I.1.3 Legal & Compliance - 'Business Contract Protection",,,,,,,,,,,,,,,"Adanya sengketa yang terjadi dalam kontrak yang telahdisepakati Perseroan dengan Pihak lain","Membuat standar kontrak sesuai dengan kebutuhan Perseroan dengan mempertimbangkan praktik terbaik yang telah ditetapkan di dalam sektor industri Perseroan","Rian Fajar Isnaeni,%23rian.fajar@gmf-aeroasia.co.id","reviu kontrak sesuai dengan tata kelola dan regulasi","M","Ika Edriantika","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TS","KPI-TS-2023-182","I.1.3 Legal & Compliance - ' Legal Services Comply with Related Regulation",,,,,,,,,,,,,,,"Adanya transaksi bisnis atau perbuatan hukum yang dilakukan tidak sesuai dengan tata kelola perusahaan serta tanpa mitigasi risiko hukum yang memadai","1. Meningkatkan awareness unit terkait atas legal risk dalam suatu transaksi bisnis
+2. Meningkatkan koordinasi antar unit terkait dengan mitigasi risiko hukum
+3. Meningkatkan koordinasi implementasi transaksi bisnis sesuai tata kelola perusahaan dan regulasi","Rian Fajar Isnaeni,%23rian.fajar@gmf-aeroasia.co.id","1. Advis hukum tersedia sesuai dengan tata kelola dan regulasi
+2. Aksi korporasi dan transaksi bisnis yang dilakukan sesuai tata kelola dan regulasi","M","Ika Edriantika","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TS","KPI-TS-2023-187","I.1.3 Legal & Compliance - IR Reporting Management",,,,,,,,,,,,,,,"Adanya kesalahan maupun keterlambatan dalam pemberian pelaporan mengenai kebutuhan informasi untuk Pemegang Saham","Optimalisasi koordinasi dengan CBO/CSS mengenai kebutuhan data untuk pembuatan Laporan kepada Pemegang Saham","Rian Fajar Isnaeni,%23rian.fajar@gmf-aeroasia.co.id","Tidak ada keterlambatan dan Penyampaian Laporan sesuai dengan kondisi Perseroan","Q","Ika Edriantika","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TF","KPI-TF-2023-194","Budget Realization","<=100%","76%","62%","71%","71%",,,,,,,,,,"Budget PBTH yang tidak sesuai dengan keadaan operasional aktual","1. kerjasama dengan planner TFP untuk evaluasi beban kerja maintenance GA & QG.                                                                      2. Analisa historical pemakaian material di setiap event maintenance.                                                                                               3. Analisa event maintenance rutin baik yamg sudah ada maupun belum ada di list PBTH.                                                                                       4. Analisa historical kertas kerja PBTH dan menggunakan asumsi operasional saat ini","Wayan Winten Adnyano,%23wayan.winten@gmf-aeroasia.co.id","1. Kertas kerja PBTH GA & QG tahun 2023 tersedia.                                      2. Profit & Loss di unit supporting (TF) dan produksi (TL)hijau di setiap bulan berjalan.","Monthly","Ressa Amelya","In progress","110%","Team Business Support TFS-1 ikut memonitor dan mengawal negoisasi PBTH. PnL di unit supporting (TF) dan produksi (TL) hijau di bulan berjalan.",,"110%","Team Business Support TFS-1 ikut memonitor dan mengawal negoisasi PBTH. PnL di unit supporting (TF) dan produksi (TL) hijau di bulan berjalan.",,"110%","Sudah dilakukan evaluasi beban kerja maint GA & QG, analisa pemakaian material, analisa historical KK PBTH dg asumsi operasional saat ini. Pencapaian yang tertera masih menggunakan data bulan sebelumnya. Akan di update setelah diperoleh nilai aktual.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TX","49","Free Cash Flow",,,,,,,,,,,,,,,"Kebutuhan perusahaan dalam pembayaran yang tidak terencana dan mendesak","1. Free Cash Flow Control
+2. Optimize Idle Fund Deposit","Indra Prabowo","1. Report buku bank tersedia
+2. Cash tersedia","Desember 2023","Githa Putri Ayuning Tyas","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TX","62"," Hedging Management ",,,,,,,,,,,,,,,"Perusahaan tidak memenuhi Peraturan Bank Indonesia No.16/21/PBI/2014"," Hedging Implementation 
+","Indra Prabowo","Tidak ada surat teguran dari Bank Indonesia","Desember 2023","Githa Putri Ayuning Tyas","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TX","63"," Prudent Debt Management ",,,,,,,,,,,,,,,"Meningkatnya jumlah hutang dan performance perusahaan yang membuat rasio financial covenant memburuk.","1. Menyisihkan sebagian dari cash flow untuk membayar hutang dan bunga (menjaga covenant DER)
+2. Optimalisasi fasilitas Non cash Loan (menjaga covenant DER)
+3. Menjaga kinerja perusahaan dengan memprioritaskan proyek/investasi yang memberikan profit pada perusahaan (menjaga covenant DSCR)""
+","Indra Prabowo","Covenant terpenuhi
+","Desember 2023","Githa Putri Ayuning Tyas","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TX","65"," Average Payment Period ",,,,,,,,,,,,,,,"Keterbatasan dana yang tersedia","1. Optimized Bank Facilities in managing GMF payment 
+2. Minimized AP Aging <229 Days 
+","Indra Prabowo","1. Tidak terdapat invoice yang terlambat tercatat di SAP
+2. Target cash in tercapai
+","Desember 2023","Githa Putri Ayuning Tyas","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","193","Performance Fulfillment",,,,,,,,,,,,,,,"- Evaluasi pengajuan penambahan capability Aircraft, Engine, APU dan Component yang melebihi waktu target","- Enhance performance of capability development evaluation","Arif Sugianto","- Requested new capabilities are evaluated  as procedure
+- New Capability &amp; Capacity Operationalized","Monthly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","174","Organization Capital Readiness (OCR)",,,,,,,,,,,,,,,"Tidak terlaksananya program terkait Organization Capital Readiness","Coordinating with all PDCA unit TQ, AoC and Structural level to perform program stated in the OCR KPI","Arif Sugianto","All program that planned for OCR KPI are performed","Monthly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","173","Human Capital Readiness (HCR)",,,,,,,,,,,,,,,"Kurangnya kompetensi personnel","- Mapping and review Quantity aspect for Non-Structural &amp; Structural
+- Develop Quaility &amp; Safety personnel based of qualification","Arif Sugianto","- Quantity of TQ Non-Structural &amp; Structural are fulfilled
+- Qualification aspect through IDP &amp; license personnel are fulfilled","Monthly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","166","Effectiveness of Finding & Recommendation Follow Up.",,,,,,,,,,,,,,,"- Masih ditemukannya finding yang sama dari audit internal maupun external","- Enhance the effectiveness of audit process
+- Enhance the controlling of Quality &amp; Safety finding and recommendation (including NCR, surveillance, investigation, IOR, COPQ)","Arif Sugianto","- Repetitive finding are reduced
+- External finding are reduced
+- Recommendation and follow up finding (including NCR, surveillance, investigation, IOR, COPQ) are well monitored","Monthly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","164","Customer Satisfaction Index",,,,,,,,,,,,,,,"- Turn Around Time suatu project melebihi batas yang sudah di rencanakan","- Review kebutuhan personnel secara periodik
+- Develop personel yang sudah ada untuk dapat mencapai kualifikasi yang dibutuhkan untuk pekerjaan RII dan Q.","Arif Sugianto","Personnel available at the right time and right place","Quarterly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","163","Customer Satisfaction Index",,,,,,,,,,,,,,,"- Kualitas produk yang direlease oleh Certifying Staff GMF tidak bagus dan mendapatkan komplain dari customer","- Enhance quality and safety coordination with customer by regular cordination with customer and daily alignment in production area by quality Control","Arif Sugianto","- Customer coordination and alignment performed 
+- Customer audit/surveillance are well escorted, and the findings are well controlled
+- Customer special requirement (PRM, CQP) for certain customer are included in audit requirement","Quarterly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TQ","160","Budget Realization",,,,,,,,,,,,,,,"Perjalanan dinas mengalami hambatan/tidak terlaksana","- Review actual realization against budget plan
+- Monthly expenditure/financing considering previous realization
+- Coordinating to Finance for optimum &amp; accurate data","Arif Sugianto","Budget realization and effiency program controlled as target","Monthly","Dita Pradini","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TV","KPI-TV-2023-224","F.1.3 COPQ","<=0.15%","0.00%",,,,,,,,,,,,,"Tool rusak / Improper","PMI Tools Monitoring","I Made Sulandra,%23im.sulandra@gmf-aeroasia.co.id","No tool broken/improper being used","Q4 2023","Achmad Muchlis","In progress","100%","No COPQ & PMI running well",,"100%","No COPQ & PMI running well",,"100%","no COPQ on March 23",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TV",,"F.1.1 Operating Profit Margin","15.5%","8.9%",,,,,,,,,,,,,"Shop visit engine GA & QG tidak sesuai target","Non GA Group market expansion","I Made Sulandra,%23im.sulandra@gmf-aeroasia.co.id","Mendapatkan project shop visit engine sebagai pengganti","Q4 2023","Achmad Muchlis","In progress","48%","Target profit margin 15.5% tercapai 7.4%",,"67.08%","Profit margin Feb 23 10,2%",,"2,067%","aktual profit margin Mar 23 3,1%",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ",,,,,,,,,,,,,,,,,"Kurang akurat dalam mengelola proyek mengakibatkan profit margin tergerus / tidak mencerminkan nilai aktual, baik dari sisi manhours recording dan material cost requirement",,,,,,"Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-260","Cost of Poor Quality","≤ 0.15%","0.00%","0.00%","0.09%","0.00%",,,,,,,,,,"Kelalaian dalam pelaksanaan Jobcard/MDR yang tidak sesuai prosedur","1. Daily surveillance by Production Manager (Checklist), Briefing diawal dan diakhir shift
+2. Meningkatkan peran supervisi melalui penugasan dan visual management
+3. Peningkatan kompetensi concern for order & achievement orientation melalui training basic aviation workmanship (BAW)
+4. Pengendalian database Jobcard secara berkala","Zarul Fuziono","1. Daily surveillance & briefing terlaksana
+2. Fungsi supervisi terlaksana
+3. BAW terlaksana","Monthly","Saphira Alifa Harahap","In progress","100%",,,"96%","COPQ terjadi diluar dari pengendalian yang ada. Perlu ditambahkan pengendalian dari tahap pembuatan Jobcard.",,"100%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-261","Cost of Poor Quality","≤ 0.15%","0.00%","0.00%","0.09%","0.00%",,,,,,,,,,"Adanya accident/incident & rework yang berdampak pada project","1. Daily surveillance by Production Manager (Checklist), Briefing diawal dan diakhir shift
+2. Meningkatkan peran supervisi melalui penugasan dan visual management
+3. Peningkatan kompetensi concern for order & achievement orientation melalui training basic aviation workmanship (BAW)","Zarul Fuziono","1. Daily surveillance & briefing terlaksana
+2. Fungsi supervisi terlaksana
+3. BAW terlaksana","Monthly","Saphira Alifa Harahap","In progress","100%",,,"96%",,,"100%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-262","Customer SLA Fulfillment","100%","80%","78%","62%","100%",,,,,,,,,,"TAT melebihi target","1. Melakukan briefing harian untuk PPC dan Produksi untuk mendiskusikan highlight dan WIP
+2. Mendokumentasikan issue project yg terjadi secara tertulis
+3. Melakukan recording atas penambahan atau pengurangan workscope","Zarul Fuziono","1. Daily briefing PPC & produksi terlaksana
+2. PCS meeting report terlaksana daily
+3. Daily Menu available","Daily","Saphira Alifa Harahap","In progress","100%",,,"100%",,,"100%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TM","KPI-TM-2023-68","Operating Profit Margin",,,,,,,,,,,,,,,"Operating profit tidak mencapai target atau minus","Fokus pada peningkatan operating profit (peningkatan revenue) dan meminimalisir cost","Desrianto Adi Prayogi","(aktual direct expense/aktual revenue) / (budget direct expense/budget revenue)*100%
+","Monthly","Riska Rizqiwati","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TM","KPI-TM-2023-71","Customer Satisfaction Index",,,,,,,,,,,,,,,"Terjadi keterlambatan update informasi ke stakeholder","Memberikan servis sesuai dengan SLA yang dijanjikan
+
+","Desrianto Adi Prayogi","Target CSI tercapai 4.0","Semester","Riska Rizqiwati","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TM","KPI-TM-2023-75","Governance, Risk and Compliance (GRC)",,,,,,,,,,,,,,,"Ketidaksesuaian dalam audit ekternal & Legal action dari vendor","1. Menjaga komitmen pembayaran dan komunikasi pada vendor yang telah mengajukan somasi","Desrianto Adi Prayogi","Nilai denda audit tahun 2023 < tahun 2021
+Meminimalisir vendor / somasi vendor tahun 2023
+","Yearly","Riska Rizqiwati","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TM","KPI-TM-2023-80","Human Capital Readiness (HCR)",,,,,,,,,,,,,,,"Tidak tercapainya target HCR yang berdampak pada bisnis dan operasional","1.Pelaporan Man power planning
+2. Monitor COT ","Desrianto Adi Prayogi","""1. Pelaporan MPP tersedia
+2. COT terlaksana""
+","Yearly","Riska Rizqiwati","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TU","48","Budget Realization",,,,,,,,,,,,,,,"""- Pengeluaran yang tidak dianggarkan sebelumnya , - Asumsi harga berubah dibandingkan dengan realisasi.""","Melakukan Pemantauan Budget setiap Bulan","Endang Darajat","Pengeluaran sesuai dengan budget yang sudah ditentukan","monthly","Aflah Mas'ud Husen","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TU","56","Customer Satisfaction Index",,,,,,,,,,,,,,,"Kondisi Ruang Customer Kurang Nyaman & Kebutuhan Customer Tidak Terpenuhi","Ketika personil sedang cleaning sekaligus inspeksi area untuk di report melalui WO","Endang Darajat","1. Ruang Customer selalu dalam kondisi nyaman
+2. kebutuhan customer terlayani dengan baik","Quarterly","Aflah Mas'ud Husen","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TU","57","Customer SLA (Speed, Solution, Quality Performance)","100%","97%","98%","96%","95%",,,,,,,,,,"WO Overdue","- Mapping dan review secara berkala untuk penentuan skala prioritas
+- Kebijakan penggantian mekanisme sistem di labeling","Endang Darajat","2 SQ Program terimplementasi","Monthly","Aflah Mas'ud Husen","In progress","98%",,,"96%",,,"95%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TC",,"F1.2 Inventory","90%","TBD","Pengukuran KPI Quarterly","Pengukuran KPI Quarterly","TBD",,,,,,,,,,"Nilai inventory yang tinggi","""1. Planner melakukan monitoring melalui sistem dan weekly consume control
+2. Breifing terkait pentingnya melakukan transaksi hingga tuntas agar kondisi antara sistem dan aktual tidak ada deviasi""","Endra Wirawan","Inventory tercapai sesuai dengan target 90%","Bulanan","Firdaus Alamsyah","In progress","63%","Mencari Rencana Pengendalian yang lebih efektrif.
+DIskusi dengan bu annisa SM TCD untuk program satu tahun kedepan",,"62%",,,"62%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TC",,"F1.1 Operating Profit Margin","100%","TBD","Pengukuran KPI Quarterly","Pengukuran KPI Quarterly","TBD",,,,,,,,,,"Operating profit tidak mencapai target atau minus","1. Mengurangi Outsource and Exchange
+2. Melakukan evaluasi dan develop cap utk item yang high removal dan tidak cap shop
+3. Memperbaiki Supply chain BDP component bersama dengan TM
+4. Mencari Partner untuk outsource repair""","Endra Wirawan","1. Biaya Outsource sama dengan atau kurang dari Budgat Outsource tiap bulannya","Bulanan","Firdaus Alamsyah","In progress",,"kasih keterangan perhitungan data,
+pembanding dari bulan d tahun sebelumnya",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TC",,"C1.1 Customer Satisfaction Index","4.00","TBD","Pengukuran KPI Quarterly","Pengukuran KPI Quarterly","TBD",,,,,,,,,,"Pelayanan yang tidak sesuai dengan ekspektasi customer","- Improve internal proses untuk memperbaiki QCDS
+- Komunikasi dengan kostumer secara intensif dengan memberi laporan terkait komponen dan material yang dibutuhkan","Endra Wirawan","- TAT tercapai","Bulanan","Firdaus Alamsyah","In progress",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TC",,"L1.1 Human Capital Readiness (HCR)","95%",,,,,,,,,,,,,,"Personel produksi yang kurang baik secara kualitas atau kuantitas","- Monitor secara intensif terkait pemenuhan dan development personnel TC
+- Merencanakan manpower capacity dan utilisasi
+- Meningkatkan proses development personnel TC termasuk training, OJT, Monitoring dan assigment","Endra Wirawan","- Qualified manpower tersedia sesuai kebutuhan
+- Development personnel TC termonitor dengan baik","Bulanan","Firdaus Alamsyah","In progress",,"-Manpower Capacity sudah diplan dan dimonitor tiap bulan oleh PDCA People.
+- Rekrutmen dan promosi inprogress oleh KSDM TC dan TH",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-90","Operating Profit Margin","28%","10%",,,,,,,,,,,,,"Adanya pekerjaan ter-TECO di sistem yang tidak sesuai dengan aktual (manhours dan material consumed)","1. Melaksanakan Post Project Review
+2. Melaksanakan evaluasi bulanan untuk revenue dan anggaran biaya dan identifikasi PICA
+3. Meningkatkan pencapaian pengiriman DFP ke Technical Recording sesuai standar waktu yg telah ditentukan QP
+4. Induction meeting dilengkapi dengan informasi capping/TMB
+5. Implementasi Xpream",,"1. Monthly Post Project Review terlaksana
+2. Revenue and production budget evaluation reported every month
+3. Delivery Documents to Technical Recording <= 3 days after RTS
+4. Induction meeting dengan informasi capping terlaksana
+5. Daily Profitability report dapat ditampilkan di XPream","Monthly","Saphira Alifa Harahap","In progress","80%",,,"80%",,,"80%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-91","Inventory","90%",,"81%","69%","81%",,,,,,,,,,"Pengerjaan task yg tertunda karena kurangnya keakuratan informasi ketersediaan part dan/atau aktivitas inspeksi/temuan yang terlambat","1. Melakukan weekly control reminder untuk transaksi WTU, WTC, dan WFR
+2. Melakukan monthly control reminder untuk transaksi Open Order 
+3. Pelaksanaan taskforce yang berhubungan dengan KPI DQI, khususnya robbing",,"1. Weekly control reminder untuk transaksi WTU, WTC, dan WFR tersedia
+2. Monthly control reminder untuk transaksi Open Order tersedia
+3. Taskforce untuk robbing terlaksana
+","Monthly","Saphira Alifa Harahap","In progress","100%",,,"100%",,,"100%",,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TJ","KPI-TJ-2023-111","Customer Satisfaction Index",,,,,,,,,,,,,,,"Tidak dapat memberikan feedback kepada permintaan/komplain customer dengan baik melalui pemenuhan kriteria keberhasilan proyek","1. Melaksanakan post-project review
+2. Post project review menambahkan summary komplain dari Customer
+3. Melakukan daily report dan komunikasi rutin dengan customer
+4. Meningkatkan kompetensi customer service orientation untuk level Project Owner",,"1. PPR terlaksana
+2. Daily report terlaksana","Monthly","Saphira Alifa Harahap","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TL","KPI-TL-2023-127",,,,,,,,,,,,,,,,"Keterlambatan pengiriman material U/S ke shop","Memastikan material U/S dikirim ke shop <= 3 hari","Bayu Prayudha","Material U/S terkirim ke shop <= 3 hari ","Monthly","Bayu Prayudha","In progress","40%","Membuatkan SP (Surat Pengiriman) sebagai bukti pengiriman material U/S dari produksi ke PPC/PPS",,"30%","Membuatkan SP (Surat Pengiriman) sebagai bukti pengiriman material U/S dari produksi ke PPC/PPS",,"14%","Membuatkan SP (Surat Pengiriman) sebagai bukti pengiriman material U/S dari produksi ke PPC/PPS",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TL","KPI-TL-2023-128",,,,,,,,,,,,,,,,"Adanya accident incident yang terjadi akibat kualitas maintenance","Melaksanakan briefing di setiap awal shift terkait prosedur kerja dan hilite issue secara konsisten","Bayu Prayudha","COPQ dibawah target
+","Q4 2023","Bayu Prayudha","In progress","0%","Melaksanakan langkah preventive dengan surveillance secara rutin di area kerja",,"0%","Melaksanakan langkah preventive dengan surveillance secara rutin di area kerja",,"0%","Melaksanakan langkah preventive dengan surveillance secara rutin di area kerja",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TL","KPI-TL-2023-129",,,,,,,,,,,,,,,,"Target yang tidak tercapai sesuai dengan SLA","Menginformasikan progress dan pencapaian atas setiap program yang telah dilakukan untuk mendukung SLA yang telah disepakati
+","Bayu Prayudha","Penilaian positif dari customer
+","Q4 2023","Bayu Prayudha","In progress","98%","Melakukan monitoring dan reporting secara rutin terkait pencapaian SLA yang sudah disepakati.",,"97.8%","Melakukan monitoring dan reporting secara rutin terkait pencapaian SLA yang sudah disepakati.",,"94%","Melakukan monitoring dan reporting secara rutin terkait pencapaian SLA yang sudah disepakati.",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TL","KPI-TL-2023-131","Productivity","80%",,,,,,,,,,,,,,"Adanya aktivitas maintenance serta manhours yang tidak tercapture","Memfasilitasi dengan mobile barcoding","Bayu Prayudha","Aktivitas maintenance dan manhours tercapture sesuai aktual
+","Q4 2023","Bayu Prayudha","In progress","92%","Melakukan pencatatan dengan media CWO secara detail terutama jumlah manhours",,"85%","Melakukan pencatatan dengan media CWO secara detail terutama jumlah manhours",,"100%","Melakukan pencatatan dengan media CWO secara detail terutama jumlah manhours",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TL","KPI-TL-2023-133","Progres Billing",,,,,,,,,,,,,,,"Potensi revenue tidak terbilling karena keterlambatan tagihan atau ketidaklengkapan dokumen","Mapping DFP TMB, baik event maintenance, manpower fulfillment, maupun material usage.
+","Bayu Prayudha","DFP untuk dokumen billing lengkap sesuai mapping dan dilaporkan secara rutin","Monthly","Bayu Prayudha","In progress","90%","Melengkapi setiap dokumen penagihan sesuai kesepakatan dengan customer",,"85%","Melengkapi setiap dokumen penagihan sesuai kesepakatan dengan customer",,"90%","Melengkapi setiap dokumen penagihan sesuai kesepakatan dengan customer",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH","KPI-TH-2023-159",,,,,,,,,,,,,,,,"System baru tidak terimplementasikan","Melakukan listing priority apa saja yang akan dilaksanakan ditahun 2023 ini
+","Eldira Umar Ali Zain","""top priority berhasil go live ditahun 2023
+""
+","Monthly","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH","KPI-TH-2023-158",,,,,,,,,,,,,,,,"System baru kurang maksimal penggunaannya","Sosialisasi HCIS Coffee Morning di setiap Dinas setiap Jumat selama 6 bulan
+","Eldira Umar Ali Zain","""User Interface, Single Sign On (SSO) & Mobility Availability ≥ 95%
+""
+","Dec 2023","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TP","KPI-TP-2023-235","Progress Billing",,,,,,,,,,,,,,,"- Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda","Close coordination dengan unit terkait untuk monitor pekerjaan",,"80% Billing dilakukan on time sesuai dengan progress pekerjaan","Monthly","Resi Octovianisa Putri","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TP","KPI-TP-2023-231","Customer Satisfaction Index",,,,,,,,,,,,,,,"Customer tidak repurchase","Close coordination dengan unit terkait untuk mengetahui customer voice",,"- Complaint, dan Closing Rate menurun
+- Corrective action terlaksana
+- Nilai CSI GMF 4","Yearly","Resi Octovianisa Putri","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TP","KPI-TP-2023-228","Revenue",,,,,,,,,,,,,,,"Pembatalan/ pengurangan atau perubahan jadwal maintenance GA & NGA","- Monthly Revenue Review
+- Mempersiapkan additional sales repalcement
+- Mempersiapkan kebutuhan slot dan menjaga kualitas layanan""",,"- Summary Revenue Report Available
+- Target revenue tercapai setiap bulan""","Monthly","Resi Octovianisa Putri","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TP","KPI-TP-2023-227","Revenue",,,,,,,,,,,,,,,"Penurunan performa utilisasi pesawat terhadap RKAP (PBTH GA)","- Monthly Revenue Review
+- Close coordination dengan Key Account Customer""",,"- Summary Revenue Report Available
+- Target revenue tercapai setiap bulan""","Monthly","Resi Octovianisa Putri","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH",,,,,,,,,,,,,,,,,"Attractive & Competitive C&B untuk memotivasi Pegawai belum maksimal","Review Kebijakan C & B serta rencana implementasinya dengan melihat Budget yang ada
+","Eldira Umar Ali Zain","""- Review Kebijakan C&B serta rencana implementasinya telah dilakukan dengan mempertimbangkan budget yang ada
+-Realisasi Penggunaan Budget C&B optimal""
+","Dec 2023","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH",,,,,,,,,,,,,,,,,"Target Revenue Perusahaan tidak tercapai sedangkan Staff Expense tidak berkurang","Melakukan efisiensi atau cutting cost terkait item-item staff expense yang kurang efisien
+","Eldira Umar Ali Zain","Terdapat kebijakan yang berdampak pada efisiensi staff expense
+","Monthly","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TM","KPI-TM-2023-79","Material & Logistic Performance",,,,,,,,,,,,,,,"SLA pemenuhan material tidak tercapai","1. Melakukan reminder kebutuhan material ke produksi
+2. Evaluasi dan implementasi Minmax, JIT, consigmnet
+3. Maintain payment kepada top 5 vendor dan forwarder
+4. Evaluasi performance material handing","Desrianto Adi Prayogi","98% SLA","Monthly",,"Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH",,,,,,,,,,,,,,,,,"Requirement jumlah & kualifikasi pegawai dalam suatu dinas tidak terpenuhi","Pengelolaan Pemenuhan kebutuhan jumlah dengan sistem mutasi antar Dinas, rekrutmen internal, dan pengembangan untuk Pegawai
+","Eldira Umar Ali Zain","Employee Readiness  ≥ 95%
+","Monthly","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+"TH",,,,,,,,,,,,,,,,,"Program pengembangan (IDAP) tidak berjalan","Review dan remainder terhadap pengelolaan monitoring People Development
+","Eldira Umar Ali Zain","""- Review dan remainder terhadap pengelolaan monitoring people development sudah dilakukan
+- People Development Index  ≥ 80%""
+","Monthly","Annisa Fathia Nurfitriani","Not started",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
