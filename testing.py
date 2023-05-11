@@ -180,7 +180,7 @@ def tb():
 
 def tc():
     st.title("Risk Management Matrix Unit TC")
-    df = pd.read_excel('data.xlsx')
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
     
 
     #data 1
