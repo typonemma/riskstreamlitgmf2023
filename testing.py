@@ -397,6 +397,86 @@ def te():
     plt.title('TE Risk Map')
     st.pyplot(fig)
     
+def tf():
+    st.title("Risk Management Matrix Unit TF")
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
+    
+     #data 1
+    df_new = df.loc[ (df['Risiko'] == 'Budget PBTH yang tidak sesuai dengan keadaan operasional aktual') & (df['Unit'] == 'TF')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Budget PBTH yang tidak sesuai dengan keadaan operasional aktual') & (df['Unit'] == 'TF')]
+    df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
+    df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
+    df_new2['Nilai Consequence Risiko Inheren'] = df_new2['Nilai Consequence (Risiko Residu)'] - 0.6
+    df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
+
+
+    #data2
+    df_new3 = df.loc[ (df['Risiko'] == 'Unserviceable material yang diturunkan dari pesawat keberadaannya tidak diketahui / hilang') & (df['Unit'] == 'TF')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Unserviceable material yang diturunkan dari pesawat keberadaannya tidak diketahui / hilang') & (df['Unit'] == 'TF')]
+    df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
+    df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
+    df_new4['Nilai Consequence Risiko Inheren'] = df_new4['Nilai Consequence (Risiko Residu)'] - 0.2
+    df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
+
+    #data3
+    df_new5 = df.loc[ (df['Risiko'] == 'Structure gap material consume muncul setelah maintenance selesai dilaksanakan') & (df['Unit'] == 'TF')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Structure gap material consume muncul setelah maintenance selesai dilaksanakan') & (df['Unit'] == 'TF')]
+    df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
+    df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
+    df_new6['Nilai Consequence Risiko Inheren'] = df_new6['Nilai Consequence (Risiko Residu)'] - 0.8
+    df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
+
+    #data4
+    df_new7 = df.loc[ (df['Risiko'] == 'Notifikasi dengan status SOD meningkat drastis') & (df['Unit'] == 'TF')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Notifikasi dengan status SOD meningkat drastis') & (df['Unit'] == 'TF')]
+    df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
+    df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
+    df_new8['Nilai Consequence Risiko Inheren'] = df_new8['Nilai Consequence (Risiko Residu)'] - 0.3
+    df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
+    
+     #data5
+    df_new9 = df.loc[ (df['Risiko'] == 'Rencana kerja yang tidak tercapai') & (df['Unit'] == 'TF')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Rencana kerja yang tidak tercapai') & (df['Unit'] == 'TF')]
+    df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
+    df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
+    df_new10['Nilai Consequence Risiko Inheren'] = df_new10['Nilai Consequence (Risiko Residu)'] - 0.5
+    df_new10['Nilai Likelihood Risiko Inheren'] = df_new10['Nilai Likelihood (Risiko Residu)'] - 0.5
+
+  
+
+    ##concat
+    con = pd.concat([df_new.assign(Risk='Budget PBTH yang tidak sesuai dengan keadaan operasional aktual'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Unserviceable material yang diturunkan dari pesawat keberadaannya tidak diketahui / hilang'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Structure gap material consume muncul setelah maintenance selesai dilaksanakan'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Notifikasi dengan status SOD meningkat drastis'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Rencana kerja yang tidak tercapai'), df_new10.assign(Risk='')])
+   
+    ##design
+    img = plt.imread('backgroundrisk.png')
+    fig, ax = plt.subplots()
+    ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
+
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
+
+
+    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+    plt.title('TF Risk Map')
+    st.pyplot(fig)
+    
 def ti():
     
 
@@ -1043,6 +1123,7 @@ page_names_to_funcs = {
     "TC" : tc,
     "TD" : td,
     "TE" : te,
+    "TF" : tf,
     "TI" : ti,
     "TJ" : tj,
     "TM" : tm,
