@@ -739,7 +739,7 @@ def tj():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TJ Risk Map')
     st.pyplot(fig)
     
@@ -820,7 +820,7 @@ def tl():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TL Risk Map')
     st.pyplot(fig)   
     
@@ -1323,6 +1323,7 @@ page_names_to_funcs = {
     "TH" : th,
     "TI" : ti,
     "TJ" : tj,
+    "TL" : tl,
     "TM" : tm,
     "TR" : tr,
     "TU" :tu,
