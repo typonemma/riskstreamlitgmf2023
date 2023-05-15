@@ -250,7 +250,7 @@ def tc():
 
 def td():
     
-st.title("Risk Management Matrix Unit TC")
+    st.title("Risk Management Matrix Unit TD")
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
     
 
