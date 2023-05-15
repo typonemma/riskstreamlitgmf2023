@@ -996,8 +996,7 @@ def tp():
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con6,
                      style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
-
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TP Risk Map')
     st.pyplot(fig)
     
