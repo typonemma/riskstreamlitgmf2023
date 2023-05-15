@@ -391,7 +391,7 @@ def te():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TE Risk Map')
     st.pyplot(fig)
     
