@@ -749,7 +749,7 @@ def tl():
     
      #data 1
     df_new = df.loc[ (df['Risiko'] == 'Keterlambatan pengiriman material U/S ke shop') & (df['Unit'] == 'TL')]
-    df_new2 = df.loc[ (df['Risiko'] == 'Keterlambatan pengiriman material U/S ke shop)') & (df['Unit'] == 'TL')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Keterlambatan pengiriman material U/S ke shop') & (df['Unit'] == 'TL')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
