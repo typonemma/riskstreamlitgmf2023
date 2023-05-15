@@ -1060,8 +1060,8 @@ def tq():
     df_new12['Nilai Likelihood Risiko Inheren'] = df_new12['Nilai Likelihood (Risiko Residu)'] - 0.7
     
      #data7
-    df_new13 = df.loc[ (df['KPI'] == 'Performance Fulfillment') & (df['Unit'] == 'TQ')]
-    df_new14 = df.loc[ (df['KPI'] == 'Performance Fulfillment') & (df['Unit'] == 'TQ')]
+    df_new13 = df.loc[ (df['ID'] == 193) & (df['Unit'] == 'TQ')]
+    df_new14 = df.loc[ (df['KPI'] == 193) & (df['Unit'] == 'TQ')]
     df_new14 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new13['Nilai Likelihood Risiko Inheren'] = df_new13['Nilai Likelihood Risiko Inheren'] - 0.1
     df_new13['Nilai Consequence Risiko Inheren'] = df_new13['Nilai Consequence Risiko Inheren'] - 0.1
