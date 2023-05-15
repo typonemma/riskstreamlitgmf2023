@@ -952,10 +952,10 @@ def tp():
     df_new9 = df.loc[ (df['Risiko'] == '- Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda') & (df['Unit'] == 'TP')]
     df_new10 = df.loc[ (df['Risiko'] == '- Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda') & (df['Unit'] == 'TP')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
-    df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
-    df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
-    df_new10['Nilai Consequence Risiko Inheren'] = df_new10['Nilai Consequence (Risiko Residu)'] - 0.5
-    df_new10['Nilai Likelihood Risiko Inheren'] = df_new10['Nilai Likelihood (Risiko Residu)'] - 0.5
+    df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.1
+    df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.1
+    df_new10['Nilai Consequence Risiko Inheren'] = df_new10['Nilai Consequence (Risiko Residu)'] - 0.1
+    df_new10['Nilai Likelihood Risiko Inheren'] = df_new10['Nilai Likelihood (Risiko Residu)'] - 0.1
     
      #data6
     df_new11 = df.loc[ (df['Risiko'] == 'Target Go-live program inisiatif digital Korporat tidak tercapai') & (df['Unit'] == 'TP')]
@@ -997,7 +997,7 @@ def tp():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
-    sns.move_legend(ax, "upper right", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower left", bbox_to_anchor=(1, 1))
     plt.title('TP Risk Map')
     st.pyplot(fig)
     
