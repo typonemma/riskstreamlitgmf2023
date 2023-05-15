@@ -1441,7 +1441,7 @@ def tx():
   
 
 
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TX Risk Map')
     st.pyplot(fig)   
 
@@ -1502,7 +1502,7 @@ def tz():
   
 
 
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TZ Risk Map')
     st.pyplot(fig)   
     
