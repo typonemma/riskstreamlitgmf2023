@@ -974,7 +974,7 @@ def tp():
     con2 = pd.concat([df_new3.assign(Risk='Pembatalan/ pengurangan atau perubahan jadwal maintenance GA & NGA'), df_new4.assign(Risk='')])
     con3 = pd.concat([df_new5.assign(Risk='Cash in kurang dari monthly plan'), df_new6.assign(Risk='')])
     con4 = pd.concat([df_new7.assign(Risk='Customer tidak kembali melakukan perawatan pesawat di GMF'), df_new8.assign(Risk='')])
-    con5 = pd.concat([df_new9.assign(Risk='Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda'), df_new10.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Keterlambatan pembayaran oleh pelanggan dan Cash in yang tertunda'), df_new10.assign(Risk='')])
     con6 = pd.concat([df_new11.assign(Risk='Target Go-live program inisiatif digital Korporat tidak tercapai'), df_new12.assign(Risk='')])
    
    
