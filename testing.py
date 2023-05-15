@@ -1249,7 +1249,7 @@ def ts():
 
 
 
-    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
+     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TS Risk Map')
     st.pyplot(fig)
     
