@@ -1421,6 +1421,7 @@ page_names_to_funcs = {
     "TJ" : tj,
     "TL" : tl,
     "TM" : tm,
+    "TP" : tp,
     "TR" : tr,
     "TU" :tu,
     "TV" : tv,
