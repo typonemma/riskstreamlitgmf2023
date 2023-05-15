@@ -1173,7 +1173,88 @@ def tr():
     sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TR Risk Map')
     st.pyplot(fig)
+    
+def ts():
+    st.title("Risk Management Matrix Unit TS")
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
+    
+     #data 1
+    df_new = df.loc[ (df['ID'] == 80) & (df['Unit'] == 'TS')]
+    df_new2 = df.loc[ (df['ID'] == 80) & (df['Unit'] == 'TS')]
+    df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
+    df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
+    df_new2['Nilai Consequence Risiko Inheren'] = df_new2['Nilai Consequence (Risiko Residu)'] - 0.6
+    df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
+
+    #data2
+    df_new3 = df.loc[ (df['ID'] == 81) & (df['Unit'] == 'TS')]
+    df_new4 = df.loc[ (df['ID'] == 81) & (df['Unit'] == 'TS')]
+    df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
+    df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
+    df_new4['Nilai Consequence Risiko Inheren'] = df_new4['Nilai Consequence (Risiko Residu)'] - 0.2
+    df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
+
+    #data3
+    df_new5 = df.loc[ (df['ID'] == 82) & (df['Unit'] == 'TS')]
+    df_new6 = df.loc[ (df['ID'] == 82) & (df['Unit'] == 'TS')]
+    df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
+    df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
+    df_new6['Nilai Consequence Risiko Inheren'] = df_new6['Nilai Consequence (Risiko Residu)'] - 0.8
+    df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
+
+    #data4
+    df_new7 = df.loc[ (df['ID'] == 83) & (df['Unit'] == 'TS')]
+    df_new8 = df.loc[ (df['ID'] == 83) & (df['Unit'] == 'TS')]
+    df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
+    df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
+    df_new8['Nilai Consequence Risiko Inheren'] = df_new8['Nilai Consequence (Risiko Residu)'] - 0.3
+    df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
+    
+     #data5
+    df_new9 = df.loc[ (df['ID'] == 187) & (df['Unit'] == 'TS')]
+    df_new10 = df.loc[ (df['ID'] == 187) & (df['Unit'] == 'TS')]
+    df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
+    df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
+    df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
+    df_new10['Nilai Consequence Risiko Inheren'] = df_new10['Nilai Consequence (Risiko Residu)'] - 0.5
+    df_new10['Nilai Likelihood Risiko Inheren'] = df_new10['Nilai Likelihood (Risiko Residu)'] - 0.5
+   
+
+    ##concat
+    con = pd.concat([df_new.assign(Risk='Terjadinya penurunan layanan dalam Pengelolaan Komunikasi Perseroan'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='1. Tindak lanjut hasil temuan audit tidak selesai tepat waktu dan tidak sesuai dengan rekomendasi audit dan Terlambatnya penyampaian laporan risk monitoring dan pengelolaan risikonya;'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Adanya transaksi bisnis atau perbuatan hukum yang dilakukan tidak sesuai dengan tata kelola perusahaan serta tanpa mitigasi risiko hukum yang memadai'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Adanya sengketa yang terjadi dalam kontrak yang telahdisepakati Perseroan dengan Pihak lain'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Adanya kesalahan maupun keterlambatan dalam pemberian pelaporan mengenai kebutuhan informasi untuk Pemegang Saham'), df_new10.assign(Risk='')])
+
+   
+    ##design
+    img = plt.imread('backgroundrisk.png')
+    fig, ax = plt.subplots()
+    ax.imshow(img, extent=[0, 5, 0, 5], aspect='auto')
+
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C0", "C0"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con2,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C6", "C6"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con3,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con7,
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
+
+
+
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
+    plt.title('TS Risk Map')
+    st.pyplot(fig)
+    
 def tu():
     
 
@@ -1515,6 +1596,7 @@ page_names_to_funcs = {
     "TP" : tp,
     "TQ" : tq,
     "TR" : tr,
+    "TS" : ts,
     "TU" :tu,
     "TV" : tv,
     "TX" :tx,
