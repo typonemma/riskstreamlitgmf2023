@@ -1226,11 +1226,11 @@ def ts():
    
 
     ##concat
-    con = pd.concat([df_new.assign(Risk='Terjadinya penurunan layanan dalam Pengelolaan Komunikasi Perseroan'), df_new2.assign(Risk='')])
+    con = pd.concat([df_new.assign(Risk='a'), df_new2.assign(Risk='')])
     con2 = pd.concat([df_new3.assign(Risk='a'), df_new4.assign(Risk='')])
-    con3 = pd.concat([df_new5.assign(Risk='Adanya transaksi bisnis atau perbuatan hukum yang dilakukan tidak sesuai dengan tata kelola perusahaan serta tanpa mitigasi risiko hukum yang memadai'), df_new6.assign(Risk='')])
-    con4 = pd.concat([df_new7.assign(Risk='Adanya sengketa yang terjadi dalam kontrak yang telahdisepakati Perseroan dengan Pihak lain'), df_new8.assign(Risk='')])
-    con5 = pd.concat([df_new9.assign(Risk='Adanya kesalahan maupun keterlambatan dalam pemberian pelaporan mengenai kebutuhan informasi untuk Pemegang Saham'), df_new10.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='ai'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='an'), df_new8.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='am'), df_new10.assign(Risk='')])
 
    
     ##design
