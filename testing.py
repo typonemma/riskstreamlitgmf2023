@@ -247,8 +247,8 @@ def tc():
     st.pyplot(fig)
 
 def td():
-
     st.title("Risk Management Matrix Unit TD")
+    wb = load_workbook(filename='data.xlsx', read_only=True)
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
 
     #data 1
