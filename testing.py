@@ -319,6 +319,7 @@ def td():
     
 def te():
     st.title("Risk Management Matrix Unit TE")
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
      #data 1
     df_new = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TD')]
     df_new2 = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TD')]
