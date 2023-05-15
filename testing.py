@@ -1446,7 +1446,7 @@ def tx():
     st.pyplot(fig)   
 
 def tz():
-    st.title("Risk Management Matrix Unit TX")
+    st.title("Risk Management Matrix Unit TZ")
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
     
      #data 1
