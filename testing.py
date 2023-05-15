@@ -545,7 +545,7 @@ def th():
     con3 = pd.concat([df_new5.assign(Risk='Requirement jumlah & kualifikasi pegawai dalam suatu dinas tidak terpenuhi'), df_new6.assign(Risk='')])
     con4 = pd.concat([df_new7.assign(Risk='Program pengembangan (IDAP) tidak berjalan'), df_new8.assign(Risk='')])
     con5 = pd.concat([df_new9.assign(Risk='System baru kurang maksimal penggunaannya'), df_new10.assign(Risk='')])
-    con6 = pd.concat([df_new10.assign(Risk='System baru tidak terimplementasikan'), df_new11.assign(Risk='')])
+    con6 = pd.concat([df_new11.assign(Risk='System baru tidak terimplementasikan'), df_new12.assign(Risk='')])
    
     ##design
     img = plt.imread('backgroundrisk.png')
