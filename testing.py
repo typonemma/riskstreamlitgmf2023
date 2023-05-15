@@ -997,7 +997,7 @@ def tp():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C2", "C2"])
 
 
-    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
     plt.title('TP Risk Map')
     st.pyplot(fig)
     
