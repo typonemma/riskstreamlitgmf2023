@@ -961,10 +961,10 @@ def tp():
     df_new11 = df.loc[ (df['KPI'] == 'Information Capital readiness') & (df['Unit'] == 'TP')]
     df_new11 = df.loc[ (df['KPI'] == 'Information Capital readiness') & (df['Unit'] == 'TP')]
     df_new12 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
-    df_new11['Nilai Likelihood Risiko Inheren'] = df_new11['Nilai Likelihood Risiko Inheren'] - 0.55
-    df_new11['Nilai Consequence Risiko Inheren'] = df_new11['Nilai Consequence Risiko Inheren'] - 0.55
-    df_new12['Nilai Consequence Risiko Inheren'] = df_new12['Nilai Consequence (Risiko Residu)'] - 0.55
-    df_new12['Nilai Likelihood Risiko Inheren'] = df_new12['Nilai Likelihood (Risiko Residu)'] - 0.55
+    df_new11['Nilai Likelihood Risiko Inheren'] = df_new11['Nilai Likelihood Risiko Inheren'] - 0.47
+    df_new11['Nilai Consequence Risiko Inheren'] = df_new11['Nilai Consequence Risiko Inheren'] - 0.47
+    df_new12['Nilai Consequence Risiko Inheren'] = df_new12['Nilai Consequence (Risiko Residu)'] - 0.47
+    df_new12['Nilai Likelihood Risiko Inheren'] = df_new12['Nilai Likelihood (Risiko Residu)'] - 0.47
     
 
   
@@ -997,7 +997,7 @@ def tp():
                      style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
-    sns.move_legend(ax, "lower left", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
     plt.title('TP Risk Map')
     st.pyplot(fig)
     
