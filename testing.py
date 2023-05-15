@@ -247,16 +247,10 @@ def tc():
     st.pyplot(fig)
 
 def td():
+ 
     st.title("Risk Management Matrix Unit TD")
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
-    #data 1
-    df_new = df.loc[ (df['Title'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TD')]
-    df_new2 = df.loc[ (df['Title'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TD')]
-    df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
-    df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
-    df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
-    df_new2['Nilai Consequence Risiko Inheren'] = df_new2['Nilai Consequence (Risiko Residu)'] - 0.6
-    df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
+   
 
     #data2
     df_new3 = df.loc[ (df['Title'] == 'Customer tidak puas atas layanan IT GMF') & (df['Unit'] == 'TD')]
@@ -288,7 +282,7 @@ def td():
 
 
     ##concat
-    con = pd.concat([df_new.assign(Risk='Realisasi budget dinas TD mengalami over budget'), df_new2.assign(Risk='')])
+  
     con2 = pd.concat([df_new3.assign(Risk='Customer tidak puas atas layanan IT GMF'), df_new4.assign(Risk='')])
     con3 = pd.concat([df_new5.assign(Risk='Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic'), df_new6.assign(Risk='')])
     con4 = pd.concat([df_new7.assign(Risk='Asset investasi dinas TD tidak terutilisasi dengan maksimal'), df_new8.assign(Risk='')])
@@ -312,6 +306,7 @@ def td():
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TB Risk Map')
     st.pyplot(fig)
+    
 
 
     
