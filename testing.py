@@ -92,13 +92,11 @@ def ta():
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
-    sns.move_legend(ax, "bottom", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TA Risk Map')
     st.pyplot(fig)
     
 
-
-   
 def tb():
     
     st.title("Risk Management Matrix Unit TB")
@@ -572,7 +570,6 @@ def th():
     
     
 def ti():
-    
 
 
     st.title("Risk Management Matrix Unit TI")
@@ -580,8 +577,8 @@ def ti():
     
 
     #data 1
-    df_new = df.loc[ (df['Risiko'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TI')]
-    df_new2 = df.loc[ (df['Risiko'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TI')]
+    df_new = df.loc[ (df['Risiko'] == 'Kurangnya value added yang dirasakan oleh auditee terhadap rekomendasi internal audit ') & (df['Unit'] == 'TI')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Kurangnya value added yang dirasakan oleh auditee terhadap rekomendasi internal audit ') & (df['Unit'] == 'TI')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -589,8 +586,8 @@ def ti():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Risiko'] == 'Customer tidak puas atas layanan IT GMF') & (df['Unit'] == 'TI')]
-    df_new4 = df.loc[ (df['Risiko'] == 'Customer tidak puas atas layanan IT GMF') & (df['Unit'] == 'TI')]
+    df_new3 = df.loc[ (df['Risiko'] == 'auditee tidak memprioritaskan penyelesaian tindak lanjut audit') & (df['Unit'] == 'TI')]
+    df_new4 = df.loc[ (df['Risiko'] == 'auditee tidak memprioritaskan penyelesaian tindak lanjut audit') & (df['Unit'] == 'TI')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -598,8 +595,8 @@ def ti():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Risiko'] == 'Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic') & (df['Unit'] == 'TD')]
-    df_new6 = df.loc[ (df['Risiko'] == 'Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic') & (df['Unit'] == 'TD')]
+    df_new5 = df.loc[ (df['Risiko'] == '1. Terbatasnya budget pengembangan tools audit 2. Keterbatasan kemampuan dalam pengembangan tools audit 3. Tidak adanya spare waktu untuk melakukan pengembangan tools audit 4. Perbaikan proses tidak efisien dan efektif') & (df['Unit'] == 'TI')]
+    df_new6 = df.loc[ (df['Risiko'] == '1. Terbatasnya budget pengembangan tools audit 2. Keterbatasan kemampuan dalam pengembangan tools audit 3. Tidak adanya spare waktu untuk melakukan pengembangan tools audit 4. Perbaikan proses tidak efisien dan efektif') & (df['Unit'] == 'TI')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -607,8 +604,8 @@ def ti():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Risiko'] == 'Asset investasi dinas TD tidak terutilisasi dengan maksimal') & (df['Unit'] == 'TD')]
-    df_new8 = df.loc[ (df['Risiko'] == 'Asset investasi dinas TD tidak terutilisasi dengan maksimal') & (df['Unit'] == 'TD')]
+    df_new7 = df.loc[ (df['Risiko'] == ' Belum dialokasikan keseluruhan pelaksanaan sertifikasi QIA- budget personil baru ') & (df['Unit'] == 'TI')]
+    df_new8 = df.loc[ (df['Risiko'] == ' Belum dialokasikan keseluruhan pelaksanaan sertifikasi QIA- budget personil baru ') & (df['Unit'] == 'TI')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -618,9 +615,9 @@ def ti():
   
 
     ##concat
-    con = pd.concat([df_new.assign(Risk='Realisasi budget dinas TD mengalami over budget'), df_new2.assign(Risk='')])
-    con2 = pd.concat([df_new3.assign(Risk='Customer tidak puas atas layanan IT GMF'), df_new4.assign(Risk='')])
-    con3 = pd.concat([df_new5.assign(Risk='Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic'), df_new6.assign(Risk='')])
+    con = pd.concat([df_new.assign(Risk='Kurangnya value added yang dirasakan oleh auditee terhadap rekomendasi internal audit '), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='auditee tidak memprioritaskan penyelesaian tindak lanjut audit'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='1. Terbatasnya budget pengembangan tools audit 2. Keterbatasan kemampuan dalam pengembangan tools audit 3. Tidak adanya spare waktu untuk melakukan pengembangan tools audit 4. Perbaikan proses tidak efisien dan efektif'), df_new6.assign(Risk='')])
     con4 = pd.concat([df_new7.assign(Risk='Asset investasi dinas TD tidak terutilisasi dengan maksimal'), df_new8.assign(Risk='')])
    
     ##design
@@ -638,8 +635,8 @@ def ti():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
 
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
-    plt.title('TD Risk Map')
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
+    plt.title('TI Risk Map')
     st.pyplot(fig)
 
 def tj():
