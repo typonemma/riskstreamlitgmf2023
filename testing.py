@@ -820,7 +820,7 @@ def tl():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
 
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TL Risk Map')
     st.pyplot(fig)   
     
@@ -899,10 +899,10 @@ def tm():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
-    
+  
 
 
-    sns.move_legend(ax, "upper center", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
     plt.title('TM Risk Map')
     st.pyplot(fig)   
     
