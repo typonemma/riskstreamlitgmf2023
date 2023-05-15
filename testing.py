@@ -1015,8 +1015,8 @@ def tq():
 
 
     #data2
-    df_new3 = df.loc[ (df['KPI'] == 'Customer Satisfaction Index') & (df['Unit'] == 'TQ')]
-    df_new4 = df.loc[ (df['KPI'] == 'Customer Satisfaction Index') & (df['Unit'] == 'TQ')]
+    df_new3 = df.loc[ (df['ID'] == '163') & (df['Unit'] == 'TQ')]
+    df_new4 = df.loc[ (df['KPI'] == '163') & (df['Unit'] == 'TQ')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -1024,8 +1024,8 @@ def tq():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Risiko'] == '- Turn Around Time suatu project melebihi batas yang sudah di rencanakan') & (df['Unit'] == 'TQ')]
-    df_new6 = df.loc[ (df['Risiko'] == '- Turn Around Time suatu project melebihi batas yang sudah di rencanakan') & (df['Unit'] == 'TQ')]
+    df_new5 = df.loc[ (df['ID'] == '164') & (df['Unit'] == 'TQ')]
+    df_new6 = df.loc[ (df['ID'] == '164') & (df['Unit'] == 'TQ')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
