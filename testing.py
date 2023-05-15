@@ -92,7 +92,7 @@ def ta():
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "bottom", bbox_to_anchor=(1, 1))
     plt.title('TA Risk Map')
     st.pyplot(fig)
     
@@ -511,7 +511,7 @@ def th():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Risiko'] == 'Program pengembangan (IDAP) tidak berjalans') & (df['Unit'] == 'TH')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Program pengembangan (IDAP) tidak berjalan') & (df['Unit'] == 'TH')]
     df_new8 = df.loc[ (df['Risiko'] == 'Program pengembangan (IDAP) tidak berjalan') & (df['Unit'] == 'TH')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
