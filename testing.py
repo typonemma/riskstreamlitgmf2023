@@ -1138,8 +1138,8 @@ def tr():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['KPI'] == 101) & (df['Unit'] == 'TR')]
-    df_new8 = df.loc[ (df['KPI'] == 101) & (df['Unit'] == 'TR')]
+    df_new7 = df.loc[ (df['ID'] == 101) & (df['Unit'] == 'TR')]
+    df_new8 = df.loc[ (df['ID'] == 101) & (df['Unit'] == 'TR')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
