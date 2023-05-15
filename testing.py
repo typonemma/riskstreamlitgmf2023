@@ -320,14 +320,16 @@ def td():
 def te():
     st.title("Risk Management Matrix Unit TE")
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
+    
      #data 1
-    df_new = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TD')]
-    df_new2 = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TD')]
+    df_new = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TE')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Target pencapaian KPI Dinas tidak tercapai') & (df['Unit'] == 'TE')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
     df_new2['Nilai Consequence Risiko Inheren'] = df_new2['Nilai Consequence (Risiko Residu)'] - 0.6
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
+
 
     #data2
     df_new3 = df.loc[ (df['Risiko'] == 'Konfigurasi pesawat antara sistem dan aktual tidak sesuai setelah proses maintenance pesawat (RTS)') & (df['Unit'] == 'TE')]
@@ -388,7 +390,7 @@ def te():
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
-                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
+                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
 
 
     sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
