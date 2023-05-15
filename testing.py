@@ -974,8 +974,8 @@ def tp():
     con2 = pd.concat([df_new3.assign(Risk='Pembatalan/ pengurangan atau perubahan jadwal maintenance GA & NGA'), df_new4.assign(Risk='')])
     con3 = pd.concat([df_new5.assign(Risk='Cash in kurang dari monthly plan'), df_new6.assign(Risk='')])
     con4 = pd.concat([df_new7.assign(Risk='Customer tidak kembali melakukan perawatan pesawat di GMF'), df_new8.assign(Risk='')])
-    con5 = pd.concat([df_new9.assign(Risk='Customer tidak kembali melakukan perawatan pesawat di GMF'), df_new10.assign(Risk='')])
-    #con6 = pd.concat([df_new11.assign(Risk='Target Go-live program inisiatif digital Korporat tidak tercapai'), df_new12.assign(Risk='')])
+    con5 = pd.concat([df_new9.assign(Risk='Keterlambatan pembayaran oleh pelanggan dan Cash in yang tertunda'), df_new10.assign(Risk='')])
+    con6 = pd.concat([df_new11.assign(Risk='Target Go-live program inisiatif digital Korporat tidak tercapai'), df_new12.assign(Risk='')])
    
    
     ##design
@@ -993,8 +993,8 @@ def tp():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con5,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
-    #sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con6,
-     #               style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con6,
+                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
     sns.move_legend(ax, "lower left", bbox_to_anchor=(1, 1))
