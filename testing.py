@@ -1246,8 +1246,6 @@ def ts():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C5", "C5"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con4,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C3", "C3"])
-    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con7,
-                    style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
 
