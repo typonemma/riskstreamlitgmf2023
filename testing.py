@@ -249,8 +249,8 @@ def tc():
 def td():
 
     st.title("Risk Management Matrix Unit TD")
-    df = pd.read_excel('data.xlsx')
-    df2 = pd.read_excel('data.xlsx')
+    df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
+     df2 = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
 
     #data 1
     df_new = df.loc[ (df['Title'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TD')]
