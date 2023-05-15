@@ -735,7 +735,7 @@ def tj():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C4", "C4"])
     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con6,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C2", "C2"])
-     sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con7,
+    sns.scatterplot(x='Nilai Consequence Risiko Inheren' , y='Nilai Likelihood Risiko Inheren', data=con7,
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
