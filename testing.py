@@ -1015,8 +1015,8 @@ def tq():
 
 
     #data2
-        df_new3 = df.loc[ (df['Penyebab Risiko'] == 'Kurangnya awareness Certifying Staff pada saat melakukan pekerjaan') & (df['Unit'] == 'TQ')]
-        df_new4 = df.loc[ (df['Penyebab Risiko'] == 'Kurangnya awareness Certifying Staff pada saat melakukan pekerjaan') & (df['Unit'] == 'TQ')]
+    df_new3 = df.loc[ (df['Penyebab Risiko'] == 'Kurangnya awareness Certifying Staff pada saat melakukan pekerjaan') & (df['Unit'] == 'TQ')]
+    df_new4 = df.loc[ (df['Penyebab Risiko'] == 'Kurangnya awareness Certifying Staff pada saat melakukan pekerjaan') & (df['Unit'] == 'TQ')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
