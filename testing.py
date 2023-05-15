@@ -949,8 +949,8 @@ def tp():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
     
      #data5
-    df_new9 = df.loc[ (df['Risiko'] == '- Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda') & (df['Unit'] == 'TP')]
-    df_new10 = df.loc[ (df['Risiko'] == '- Keterlambatan pembayaran oleh pelanggan - Cash in yang tertunda') & (df['Unit'] == 'TP')]
+    df_new9 = df.loc[ (df['KPI'] == 'Progress Billing') & (df['Unit'] == 'TP')]
+    df_new10 = df.loc[ (df['KPI'] == 'Progress Billing') & (df['Unit'] == 'TP')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.1
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.1
