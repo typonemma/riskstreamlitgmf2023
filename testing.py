@@ -255,8 +255,8 @@ def td():
     
 
     #data 1
-    df_new = df.loc[ (df['Risiko'] == 'Operating profit tidak mencapai target atau minus') & (df['Unit'] == 'TC')]
-    df_new2 = df.loc[ (df['Risiko'] == 'Operating profit tidak mencapai target atau minus') & (df['Unit'] == 'TC')]
+    df_new = df.loc[ (df['Risiko'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TD')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Realisasi budget dinas TD mengalami over budget') & (df['Unit'] == 'TD')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -264,8 +264,8 @@ def td():
     df_new2['Nilai Likelihood Risiko Inheren'] = df_new2['Nilai Likelihood (Risiko Residu)'] - 0.6
 
     #data2
-    df_new3 = df.loc[ (df['Risiko'] == 'Nilai inventory yang tinggi') & (df['Unit'] == 'TC')]
-    df_new4 = df.loc[ (df['Risiko'] == 'Nilai inventory yang tinggi') & (df['Unit'] == 'TC')]
+    df_new3 = df.loc[ (df['Risiko'] == 'Customer tidak puas atas layanan IT GMF') & (df['Unit'] == 'TD')]
+    df_new4 = df.loc[ (df['Risiko'] == 'Customer tidak puas atas layanan IT GMF') & (df['Unit'] == 'TD')]
     df_new4 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new3['Nilai Likelihood Risiko Inheren'] = df_new3['Nilai Likelihood Risiko Inheren'] - 0.2
     df_new3['Nilai Consequence Risiko Inheren'] = df_new3['Nilai Consequence Risiko Inheren'] - 0.2
@@ -273,8 +273,8 @@ def td():
     df_new4['Nilai Likelihood Risiko Inheren'] = df_new4['Nilai Likelihood (Risiko Residu)'] - 0.2
 
     #data3
-    df_new5 = df.loc[ (df['Risiko'] == 'Pelayanan yang tidak sesuai dengan ekspektasi customer') & (df['Unit'] == 'TC')]
-    df_new6 = df.loc[ (df['Risiko'] == 'Pelayanan yang tidak sesuai dengan ekspektasi customer') & (df['Unit'] == 'TC')]
+    df_new5 = df.loc[ (df['Risiko'] == 'Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic') & (df['Unit'] == 'TD')]
+    df_new6 = df.loc[ (df['Risiko'] == 'Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic') & (df['Unit'] == 'TD')]
     df_new6 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new5['Nilai Likelihood Risiko Inheren'] = df_new5['Nilai Likelihood Risiko Inheren'] - 0.8
     df_new5['Nilai Consequence Risiko Inheren'] = df_new5['Nilai Consequence Risiko Inheren'] - 0.8
@@ -282,8 +282,8 @@ def td():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['Risiko'] == 'Personel produksi yang kurang baik secara kualitas atau kuantitas') & (df['Unit'] == 'TC')]
-    df_new8 = df.loc[ (df['Risiko'] == 'Personel produksi yang kurang baik secara kualitas atau kuantitas') & (df['Unit'] == 'TC')]
+    df_new7 = df.loc[ (df['Risiko'] == 'Asset investasi dinas TD tidak terutilisasi dengan maksimal') & (df['Unit'] == 'TD')]
+    df_new8 = df.loc[ (df['Risiko'] == 'Asset investasi dinas TD tidak terutilisasi dengan maksimal') & (df['Unit'] == 'TD')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -293,10 +293,10 @@ def td():
   
 
     ##concat
-    con = pd.concat([df_new.assign(Risk='Operating profit tidak mencapai target atau minus'), df_new2.assign(Risk='')])
-    con2 = pd.concat([df_new3.assign(Risk='Nilai inventory yang tinggi'), df_new4.assign(Risk='')])
-    con3 = pd.concat([df_new5.assign(Risk='Pelayanan yang tidak sesuai dengan ekspektasi customer'), df_new6.assign(Risk='')])
-    con4 = pd.concat([df_new7.assign(Risk='Personel produksi yang kurang baik secara kualitas atau kuantitas'), df_new8.assign(Risk='')])
+    con = pd.concat([df_new.assign(Risk='Realisasi budget dinas TD mengalami over budget'), df_new2.assign(Risk='')])
+    con2 = pd.concat([df_new3.assign(Risk='Customer tidak puas atas layanan IT GMF'), df_new4.assign(Risk='')])
+    con3 = pd.concat([df_new5.assign(Risk='Tidak tercapainya kesepakatan dengan partner pada rencana pengembangan inorganic'), df_new6.assign(Risk='')])
+    con4 = pd.concat([df_new7.assign(Risk='Asset investasi dinas TD tidak terutilisasi dengan maksimal'), df_new8.assign(Risk='')])
    
     ##design
     img = plt.imread('backgroundrisk.png')
