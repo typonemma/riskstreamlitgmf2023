@@ -520,7 +520,7 @@ def th():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
     
      #data5
-    df_new9 = df.loc[ (df['Risiko'] == 'System baru kurang maksimal penggunaannya') & (df['Unit'] == 'TH')]
+    df_new9 = df.loc[ (df['Risiko'] == 'System baru tidak terimplementasikan') & (df['Unit'] == 'TH')]
     df_new10 = df.loc[ (df['Risiko'] == 'System baru kurang maksimal penggunaannya') & (df['Unit'] == 'TH')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
