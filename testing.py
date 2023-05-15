@@ -1005,8 +1005,8 @@ def tq():
     df = pd.read_excel(open('data.xlsx', 'rb'), sheet_name='RR2023')
     
      #data 1
-    df_new = df.loc[ (df['ID'] == '160') & (df['Unit'] == 'TQ')]
-    df_new2 = df.loc[ (df['ID'] == '160') & (df['Unit'] == 'TQ')]
+    df_new = df.loc[ (df['Risiko'] == 'Perjalanan dinas mengalami hambatan/tidak terlaksana') & (df['Unit'] == 'TQ')]
+    df_new2 = df.loc[ (df['Risiko'] == 'Perjalanan dinas mengalami hambatan/tidak terlaksana') & (df['Unit'] == 'TQ')]
     df_new2 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new['Nilai Likelihood Risiko Inheren'] = df_new['Nilai Likelihood Risiko Inheren'] - 0.6
     df_new['Nilai Consequence Risiko Inheren'] = df_new['Nilai Consequence Risiko Inheren'] - 0.6
@@ -1033,8 +1033,8 @@ def tq():
     df_new6['Nilai Likelihood Risiko Inheren'] = df_new6['Nilai Likelihood (Risiko Residu)'] - 0.8
 
     #data4
-    df_new7 = df.loc[ (df['ID'] == '166') & (df['Unit'] == 'TQ')]
-    df_new8 = df.loc[ (df['ID'] == '166') & (df['Unit'] == 'TQ')]
+    df_new7 = df.loc[ (df['KPI'] == 'Effectiveness of Finding & Recommendation Follow Up.') & (df['Unit'] == 'TQ')]
+    df_new8 = df.loc[ (df['KPI'] == 'Effectiveness of Finding & Recommendation Follow Up.') & (df['Unit'] == 'TQ')]
     df_new8 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new7['Nilai Likelihood Risiko Inheren'] = df_new7['Nilai Likelihood Risiko Inheren'] - 0.3
     df_new7['Nilai Consequence Risiko Inheren'] = df_new7['Nilai Consequence Risiko Inheren'] - 0.3
@@ -1042,8 +1042,8 @@ def tq():
     df_new8['Nilai Likelihood Risiko Inheren'] = df_new8['Nilai Likelihood (Risiko Residu)'] - 0.3
     
      #data5
-    df_new9 = df.loc[ (df['ID'] == '173') & (df['Unit'] == 'TQ')]
-    df_new10 = df.loc[ (df['ID'] == '173') & (df['Unit'] == 'TQ')]
+    df_new9 = df.loc[ (df['Risiko'] == 'Kurangnya kompetensi personnel') & (df['Unit'] == 'TQ')]
+    df_new10 = df.loc[ (df['Risiko'] == 'Kurangnya kompetensi personnel') & (df['Unit'] == 'TQ')]
     df_new10 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new9['Nilai Likelihood Risiko Inheren'] = df_new9['Nilai Likelihood Risiko Inheren'] - 0.5
     df_new9['Nilai Consequence Risiko Inheren'] = df_new9['Nilai Consequence Risiko Inheren'] - 0.5
@@ -1051,8 +1051,8 @@ def tq():
     df_new10['Nilai Likelihood Risiko Inheren'] = df_new10['Nilai Likelihood (Risiko Residu)'] - 0.5
     
      #data6
-    df_new11 = df.loc[ (df['ID'] == '174') & (df['Unit'] == 'TQ')]
-    df_new12 = df.loc[ (df['ID'] == '174') & (df['Unit'] == 'TQ')]
+    df_new11 = df.loc[ (df['Risiko'] == 'Tidak terlaksananya program terkait Organization Capital Readiness') & (df['Unit'] == 'TQ')]
+    df_new12 = df.loc[ (df['Risiko'] == 'Tidak terlaksananya program terkait Organization Capital Readiness') & (df['Unit'] == 'TQ')]
     df_new12 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new11['Nilai Likelihood Risiko Inheren'] = df_new11['Nilai Likelihood Risiko Inheren'] - 0.7
     df_new11['Nilai Consequence Risiko Inheren'] = df_new11['Nilai Consequence Risiko Inheren'] - 0.7
@@ -1060,8 +1060,8 @@ def tq():
     df_new12['Nilai Likelihood Risiko Inheren'] = df_new12['Nilai Likelihood (Risiko Residu)'] - 0.7
     
      #data7
-    df_new13 = df.loc[ (df['ID'] == '193') & (df['Unit'] == 'TQ')]
-    df_new14 = df.loc[ (df['ID'] == '193') & (df['Unit'] == 'TQ')]
+    df_new13 = df.loc[ (df['KPI'] == 'Performance Fulfillment') & (df['Unit'] == 'TQ')]
+    df_new14 = df.loc[ (df['KPI'] == 'Performance Fulfillment') & (df['Unit'] == 'TQ')]
     df_new14 = df_new2.drop(['Nilai Consequence Risiko Inheren', 'Nilai Likelihood Risiko Inheren'], axis='columns')
     df_new13['Nilai Likelihood Risiko Inheren'] = df_new13['Nilai Likelihood Risiko Inheren'] - 0.1
     df_new13['Nilai Consequence Risiko Inheren'] = df_new13['Nilai Consequence Risiko Inheren'] - 0.1
@@ -1100,7 +1100,7 @@ def tq():
                     style='Risk', hue='Risk', ax=ax, s=160, palette=["C1", "C1"])
 
 
-    sns.move_legend(ax, "upper left", bbox_to_anchor=(1, 1))
+    sns.move_legend(ax, "lower center", bbox_to_anchor=(1, 1))
     plt.title('TQ Risk Map')
     st.pyplot(fig)
     
